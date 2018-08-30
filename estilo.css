@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+
+}
+button{
+  background-color: #40cd28;
+  color: white;
+  margin: 15px;
+}
+input{
+border-color: #ccc;
+color:
+}
+
+form{
+  width: 400px;
+  margin: 20px auto;
+}
+
+label{
+  float: left;
+margin: 15px;
+color: #40cd28;
+}
+
+button.Facebook{
+  margin: 15px;
+  background-color: #3b5998;
+}
+
+p{
+  margin:15px;
+}
