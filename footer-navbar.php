@@ -1,6 +1,6 @@
 <!--INICIO DO FOOTER -->
-<footer>
 <div class="container-fluid footer-container">
+<footer>
 	<div class="row footer">
 	<div class="col-md-3">
 		<ul>
@@ -38,6 +38,7 @@
 
 	</div>
 	</div>
+	</footer>
 </div>
-</footer>
+
 <!-- FIM DO FOOTER -->

@@ -3,13 +3,12 @@
 <!-- linnks necessarios do head -->
 		<?php include("head.php") ?>
 
-<header>
-	<!-- navbar -->
-<?php include("navbar.php") ?>
-</header>
-
 <!-- corpo do site -->
 <body>
+	<header>
+		<!-- navbar -->
+	<?php include("navbar.php") ?>
+	</header>
 	<div class="container-fluid">
 <!-- INICIO DOS 3 CARROSSEIS -->
 <div class="container-fluid container-carrossel">
@@ -33,11 +32,13 @@
 
 
 
-<!-- inclusao da navbar do footer -->
-<?php include("footer-navbar.php") ?>
+
 
 <!-- /*essa div abaixo eh o fechamento do container todo*/ -->
 </div>
+
+<!-- inclusao da navbar do footer -->
+<?php include("footer-navbar.php") ?>
 <!-- inclusao dos links necessarios do fim da pagina -->
 <?php include("links-footer.php") ?>
 </body>

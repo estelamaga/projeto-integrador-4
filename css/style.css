@@ -10,7 +10,7 @@ body{
 }
 
 ul.nav.navbar-nav li a{
-  color: #302013;
+  color: rgb(6, 75, 7);
 }
 
 .my-btn{
@@ -48,8 +48,14 @@ button.btn.my-btn:hover{
   color: rgb(6, 75, 7);
 }
 /* INIIO DO DROPDOWN DA NAVBAR */
-.dropdown-toggle ul{
-  background-color: rgb(215, 240, 162);
+.navbar-nav>li>.dropdown-menu{
+  background: rgb(215, 240, 162);
+}
+.navbar-default .navbar-nav>.open>a:hover{
+  background: rgb(215, 240, 162);
+}
+.navbar-default .navbar-nav>.open>a:focus{
+  background: rgb(215, 240, 162);
 }
 /* FIM DO DROPDOWN DA NAVBAR */
 /*FIM DA NAVBAR */
