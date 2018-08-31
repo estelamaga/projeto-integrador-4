@@ -14,19 +14,23 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class=" my-navbar collapse navbar-collapse cor-texto" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav ">
-					 <li class=logo-img><a href="About.html"></a><img src="images/logo.png" alt=""></li>
-	        <li class=" my-navbar2"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">About</a></li><li><a href="#">Helping Others</a></li><li><a href="#">Contact</a><li><a href="#">FAQ</a>
+					 <li class=logo-img><a href="index.php"></a><img src="images/logo.png" alt=""></li>
+		        <!-- <li class=" my-navbar2"><a href="#">Home <span class="sr-only">(current)</span></a></li> -->
+		        <li><a href="about.php">About</a></li>
+						<li><a href="comingsoon.php">Produtos Reciclados</a></li>
+						<li><a href="contato.php">Alimentos Organicos</a></li>
+						<!-- <li><a href="perguntasfrequentes.php">FAQ</a></li> -->
 	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Roupas Organicas<span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="#">Organig Chothing</a></li>
-	            <li><a href="#">Organinc Groceries</a></li>
-	            <li><a href="#">Recycled Supplies</a></li>
+	            <li><a href="comingsoon.php">Feminina</a></li>
+	            <li><a href="comingsoon.php">Masculina</a></li>
+	            <li><a href="comingsoon.php">Infantil</a></li>
+							<li><a href="comingsoon.php">Pets</a></li>
 	            <li role="separator" class="divider"></li>
-	            <li><a href="#">About our Products</a></li>
+	            <li><a href="comingsoon.php">Sobre nossos produtos</a></li>
 	            <li role="separator" class="divider"></li>
-	            <li><a href="helping.hands.php">Helping Others</a></li>
+	            <!-- <li><a href="helping.hands.php">Helping Others</a></li> -->
 	          </ul>
 	        </li>
 	      </ul>
@@ -40,7 +44,7 @@
 
 					<div class="navbar-form navbar-right">
 					<ul class="nav navbar-nav">
-						 <li class=cart-img><a href="cart.html"></a><img src="images/shopping-cart-img2.png" alt=""></li>
+						 <li class=cart-img><a href="comingsoon.php"></a><img src="images/shopping-cart-img2.png" alt=""></li>
 		        </ul>
 					</div>
 	      </form>

@@ -2,6 +2,8 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
 }
 /* NAVBAR.PHP */
 /*INICIO DA NAVBAR */
@@ -18,18 +20,18 @@ ul.nav.navbar-nav li a{
   color:white;
 }
 
-button.btn.my-btn:hover{
+/* button.btn.my-btn:hover{
   color: #aba232;
   background: #234913;
-}
+} */
 
 .cor-texto ul li a{
   color: #302013;
 }
 
 .logo-img img{
-  width: 70px;
-  height: 60px;
+  width: 90px;
+  height: 80px;
   float: left;
   margin-left: 3px;
   margin-right: -5px;
@@ -47,6 +49,8 @@ button.btn.my-btn:hover{
   margin-bottom: -21px;
   color: rgb(6, 75, 7);
 }
+
+
 /* INIIO DO DROPDOWN DA NAVBAR */
 .navbar-nav>li>.dropdown-menu{
   background: rgb(215, 240, 162);
@@ -70,7 +74,28 @@ button.btn.my-btn:hover{
 /*FIM DO CORPO (CARROSSEIS)
 
 
+/* ABOUT.PHP */
+/* inicio do about */
+.img-about img{
+  width: 440px;
+  height: 220px;
+}
+
+h2{
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+/* fim do about */
+
+
+
 /* HELPING-HANDS.PHP */
+/* inicio da helping-hands */
 body{
   background:#08170173;
 }
@@ -81,7 +106,6 @@ h1{
   height: 100px;
   text-align: center;
   color:;
-
 }
 
 h1.subtitle {
@@ -95,7 +119,7 @@ h2{
   text-align: center;
 }
 
-img{
+img{ /*IMPORTANT!*/
   width: 100%;
 }
 
@@ -103,11 +127,7 @@ p{
   text-align: justify;
   padding: 20px;
 }
-
-
-
-
-
+/* fim do helping-hands */
 
 
 
@@ -117,6 +137,7 @@ p{
   background-color: rgb(215, 240, 162);
   width: 100%;
   padding-top: 15px;
+  margin-top: 25px;
 }
 
 .footer-container ul{
@@ -131,5 +152,13 @@ p{
 
 .footer-container ul li a{
   color: rgb(6, 75, 7);
+}
+
+ul.payment.img img{
+  width: 10px;
+}
+
+.payment-img img{
+  width: 10px;
 }
 /*FIM DO FOOTER*/
