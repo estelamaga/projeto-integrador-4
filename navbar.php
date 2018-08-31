@@ -31,10 +31,7 @@
 	        </li>
 	      </ul>
 	      <form class="navbar-form navbar-right">
-	        <div class="form-group">
-						<input type="text" class="form-control" placeholder="Login">
-	        </div>
-	        <button type="submit" class="btn my-btn">Submit</button>
+	        <a type="submit" class="btn my-btn" href="login.php">Login</a>
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="I am looking for">
 					</div>
