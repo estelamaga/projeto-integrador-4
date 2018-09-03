@@ -161,3 +161,18 @@ ul.payment.img img{
 
 
 /*FIM DO FOOTER*/
+
+/*inicio inclusao de estilos pra h1, h2, h3 e h4 (provisorio)*/
+h1{
+  color: white;
+}
+
+h4{
+  color: white;
+  text-align: center;
+}
+
+h2{
+  color: white;
+}
+/*fim da inclusao h1, h2, h3, h4*/
