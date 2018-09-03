@@ -33,7 +33,7 @@
 	<div class="col col-md-3">
 		<ul>
 			<li><a href="comingsoon.php">Payment Options</li>
-				<img class=payment-img src="images/payment.png" alt="">
+				<img style="width:100px"class=payment-img src="images/payment.png" alt="">
 		</ul>
 
 	</div>
