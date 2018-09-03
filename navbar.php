@@ -14,9 +14,9 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class=" my-navbar collapse navbar-collapse cor-texto" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav ">
-					 <li class=logo-img><a href="index.php"></a><img src="images/logo.png" alt=""></li>
+					 <li class=logo-img><a href="comingsoon.php"></a><img src="images/logo.png" alt=""></li>
 		        <!-- <li class=" my-navbar2"><a href="#">Home <span class="sr-only">(current)</span></a></li> -->
-		        <li><a href="about.php">About</a></li>
+		        <li><a href="comingsoon.php">About</a></li>
 						<li><a href="comingsoon.php">Produtos Reciclados</a></li>
 						<li><a href="contato.php">Alimentos Organicos</a></li>
 						<!-- <li><a href="perguntasfrequentes.php">FAQ</a></li> -->
