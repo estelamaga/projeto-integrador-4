@@ -14,7 +14,7 @@ color:
 
 form{
   width: 400px;
-  margin: 20px auto;
+  margin: 110px auto;
 }
 
 label{
@@ -29,5 +29,99 @@ button.Facebook{
 }
 
 p{
-  margin:15px;
+  margin:5px;
 }
+
+
+/* NAVBAR.PHP */
+/*INICIO DA NAVBAR */
+.my-navbar{
+  background-color: rgb(215, 240, 162);
+}
+
+ul.nav.navbar-nav li a{
+  color: rgb(6, 75, 7);
+}
+
+.my-btn{
+  background: #666;
+  color:white;
+}
+
+/* button.btn.my-btn:hover{
+  color: #aba232;
+  background: #234913;
+} */
+
+.cor-texto ul li a{
+  color: #302013;
+}
+
+.logo-img img{
+  width: 90px;
+  height: 80px;
+  float: left;
+  margin-left: 3px;
+  margin-right: -5px;
+  margin-top: -37px;
+  margin-bottom: -17px;
+}
+
+.cart-img img{
+  width: 56px;
+  height: 43px;
+  float: right;
+  margin-left: -12px;
+  margin-right: 5px;
+  margin-top: -44px;
+  margin-bottom: -21px;
+  color: rgb(6, 75, 7);
+}
+
+
+/* INIIO DO DROPDOWN DA NAVBAR */
+.navbar-nav>li>.dropdown-menu{
+  background: rgb(215, 240, 162);
+}
+.navbar-default .navbar-nav>.open>a:hover{
+  background: rgb(215, 240, 162);
+}
+.navbar-default .navbar-nav>.open>a:focus{
+  background: rgb(215, 240, 162);
+}
+/* FIM DO DROPDOWN DA NAVBAR */
+/*FIM DA NAVBAR */
+
+
+
+/* FOOTER-NAVBAR.PHP */
+/*INICIO DO FOOTER */
+.footer-container{
+  background-color: rgb(215, 240, 162);
+  width: 100%;
+  padding-top: 15px;
+  margin-top: 25px;
+}
+
+.footer-container ul{
+  text-align: center;
+  background-color: rgb(215, 240, 162);
+  width: 100%;
+}
+
+.footer-container ul li{
+  list-style: none;
+}
+
+.footer-container ul li a{
+  color: rgb(6, 75, 7);
+}
+
+ul.payment.img img{
+  width: 10px;
+}
+
+.payment-img img{
+  width: 10px;
+}
+/*FIM DO FOOTER*/
