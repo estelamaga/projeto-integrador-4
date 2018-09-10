@@ -19,9 +19,17 @@ body{
   background-color: #f2f2f2;
 }
 
+ul.nav.navbar-nav{
+  display: flex;
+  float: right;
+}
+ul.nav.navbar-nav li{
+  align-self: center;
+}
 ul.nav.navbar-nav li a{
-  color: #373F27;
+  color: #636B46;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .my-btn{
@@ -39,25 +47,16 @@ button.btn.my-btn:hover{
 }
 
 .logo-img img{
-  width: 70px;
-  height: 60px;
+  width: 80px;
   float: left;
-  margin-left: 3px;
-  margin-right: -5px;
-  margin-top: -37px;
-  margin-bottom: -17px;
 }
 
-.cart-img img{
+.cart{
   width: 56px;
-  height: 43px;
   float: right;
-  margin-left: -12px;
-  margin-right: 5px;
-  margin-top: -44px;
-  margin-bottom: -21px;
   color: rgb(6, 75, 7);
 }
+
 /* INIIO DO DROPDOWN DA NAVBAR */
 .navbar-nav>li>.dropdown-menu{
   background: rgb(215, 240, 162);
@@ -100,7 +99,6 @@ img{
 }
 
 p{
-  text-align: justify;
   padding: 20px;
 }
 
@@ -114,14 +112,13 @@ p{
 /* FOOTER-NAVBAR.PHP */
 /*INICIO DO FOOTER */
 footer{
-  background-color: rgb(215, 240, 162);
+  background-color: #636B46;
   width: 100%;
   padding-top: 15px;
 }
 
 footer ul{
   text-align: center;
-  background-color: rgb(215, 240, 162);
   width: 100%;
 }
 
@@ -130,7 +127,11 @@ footer ul li{
 }
 
 footer ul li a{
-  color: rgb(6, 75, 7);
+  color: #fff;
+  font-weight: 300;
+}
+footer a:hover{
+  color: #fff;
 }
 /*FIM DO FOOTER*/
 
@@ -148,13 +149,13 @@ footer ul li a{
   background-color: #CDA34F;
 }
 .form-login input{
-border-color: #ccc;
-color:
+  border-color: #ccc;
 }
 
 form.form-login{
   width: 400px;
   margin: 20px auto;
+  text-align: center;
 }
 
 .form-login label{
@@ -170,7 +171,7 @@ font-weight: 300;
 }
 
 .form-login p{
-  margin:15px;
+  margin:15px auto;
 }
 
 /* fim estilo login */
