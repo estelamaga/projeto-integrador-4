@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="estilo.css" rel="stylesheet">
-  </head>
-  <body>
+<?php include('header.html'); ?>
   <div class="container">
-    <form class="text-center">
+    <form class="text-center form-login">
     <h1> Fazer login</h1>
     <label for="">Email:</label>
     <input type="text" name="Email" placeholder="Ex:pedro@hotmail.com" class="form-control">
@@ -21,5 +12,4 @@
     <p>Não tem cadastro? <a href="#">Cadastra-se</a>    </p>
     </form>
   </div>
-  </body>
-  </html>
+<?php include('footer.html'); ?>
