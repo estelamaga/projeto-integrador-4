@@ -37,10 +37,10 @@ ul.nav.navbar-nav li a{
   color:white;
 }
 
-button.btn.my-btn:hover{
+/* button.btn.my-btn:hover{
   color: #aba232;
   background: #234913;
-}
+} */
 
 .cor-texto ul li a{
   color: #302013;
@@ -73,6 +73,26 @@ button.btn.my-btn:hover{
 
 
 
+/* ABOUT.PHP */
+/* inicio do about */
+.img-about img{
+  width: 440px;
+  height: 220px;
+}
+
+h2{
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+/* fim do about */
+
+
+
 /* HELPING-HANDS.PHP */
 
 h1{
@@ -94,18 +114,14 @@ h2{
   /* text-align: center; */
 }
 
-img{
+img{ /*IMPORTANT!*/
   width: 100%;
 }
 
 p{
   padding: 20px;
 }
-
-
-
-
-
+/* fim do helping-hands */
 
 
 
@@ -115,6 +131,7 @@ footer{
   background-color: #636B46;
   width: 100%;
   padding-top: 15px;
+  margin-top: 25px;
 }
 
 footer ul{
@@ -133,6 +150,12 @@ footer ul li a{
 footer a:hover{
   color: #fff;
 }
+
+ul.payment.img img{
+  width: 10px;
+}
+
+
 /*FIM DO FOOTER*/
 
 

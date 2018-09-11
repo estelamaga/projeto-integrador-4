@@ -9,7 +9,7 @@
     <button class="btn" type="button">Entrar </button>
     <br>
     <button  class="btn Facebook" type="button">Entrar com Facebook</button>
-    <p>Não tem cadastro? <a href="#">Cadastra-se</a>    </p>
+    <p>Não tem cadastro? <a href="#">Cadastre-se</a></p>
     </form>
   </div>
 <?php include('footer.html'); ?>
