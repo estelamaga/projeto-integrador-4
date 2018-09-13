@@ -35,7 +35,7 @@
            padding-top:50px;
           }
           </style>
-		  
+
       </head>
 
       <body>
@@ -44,7 +44,7 @@
       	<div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12"><!-- Container Geral -->
 
-                <form action="salvando_usuarios.php" method="post"><!-- Inicio Form -->
+                <form  action="validaCadastro.php" method="post" enctype="multipart/form-data"><!-- Inicio Form -->
 
                   <div class="panel panel-default"><!-- Inicio Panel Geral -->
                       <div class="panel-heading"><!-- Titulo Panel -->
@@ -79,6 +79,13 @@
                                 <input type="text" class="form-control" maxlength=15  name="confirma_senha" placeholder="Confirme sua senha"><br>
                               </div>
                             </div><!-- Fim Div -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+                              <div class="col-lg-5 col-md-6 col-sm-6">
+                                <label for="ex1">Faca upload da sua foto de perfil</label>
+                                <input type="file" class="form-control"  name="fotoPerfil"><br>
+                              </div>
+                            </div>
 
                       			<div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
                               <div class="col-lg-2 col-md-6 col-sm-3">

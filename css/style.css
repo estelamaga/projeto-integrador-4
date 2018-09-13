@@ -158,6 +158,31 @@ ul.payment.img img{
 
 /*FIM DO FOOTER*/
 
+#teste{
+  text-align: center;
+}
+
+h1.logados {
+  text-align: center;
+}
+
+
+/* ESQUECI MINHA SENHA */
+
+.esqueci button{
+  background-color: #636B46;
+  color: white;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left:12px;
+  padding-right: 12px;
+}
+
+ .logoff{
+  text-align: center;
+}
+
 
 /* estilo login */
 .form-login h1{
