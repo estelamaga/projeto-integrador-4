@@ -1,19 +1,10 @@
-<?php include('header.html');
-?>
-
-
 <?php
 session_start();
 
-if (!isset($_SESSION["email"]) && !isset($_SESSION["senha"])){
-  header ("Location:index.php");
-
+if (isset($_SESSION["email"])){
+  $emailSessao=$_SESSION["email"];
+  //header ("Location:index.php");
 }
-
-$emailSessao = $_SESSION["email"];
-$senhaSessao = $_SESSION["senha"];
-
-
 
  ?>
 
@@ -24,6 +15,8 @@ $senhaSessao = $_SESSION["senha"];
      <title></title>
    </head>
    <body>
+     <?php include('header.html');
+     ?>
      <div class="container-fulid">
      <h1 class="logados"><?php echo "Ola, $emailSessao"; ?></h1>
       <p id="teste"><a class="logoff" href="logoff.php">Logout</a></p>
