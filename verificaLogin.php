@@ -4,14 +4,19 @@ if($_POST){
   $email = $_POST["email"];
   $senha = $_POST["senha"];
 
-$_SESSION["email"]=$email;
-$_SESSION["senha"]=$senha;
+  $usuariosJson = 'usuarios.json';
+  $usuarios = file_get_contents($usuariosJson);
+  $usuariosArray = json_decode($usuarios, true);
 
-if ($email === $_SESSION["email"] && $senha === $_SESSION["senha"]){
-  header("Location:logados.php");
-} else {
-  header ("Location: login.php");
-}
+  foreach ($usuariosArray['usuarios'] as $key => $value) {
+      if(in_array($email, $usuariosArray['usuarios'][$key])){//verifica se usuario existe
+        if ($senha === $usuariosArray['usuarios'][$key]['senha']){//verifica senha
+          header('Location: logados.php');
+        }else{
+          header('Location: login.php?error=true');
+        }
+      }
+  }
 
 }
 

@@ -55,28 +55,28 @@
                       			<div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                                 <div class="col-lg-5 col-md-6 col-sm-6">
                                   <label for="ex1">Nome:</label>
-                                  <input type="text" class="form-control" maxlength="20"  name="nome" placeholder="Informe seu nome"><br>
+                                  <input type="text" class="form-control" maxlength="20"  name="nome" placeholder="Informe seu nome" required><br>
                                 </div>
                       			</div><!-- Fim Div -->
 
                       			<div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                               <div class="col-lg-5 col-md-6 col-sm-6">
                                 <label for="ex1">Email:</label>
-                                <input type="email" class="form-control" maxlength="20"  name="email" placeholder="usuario@usuario.com"><br>
+                                <input type="email" class="form-control" maxlength="50"  name="email" placeholder="usuario@usuario.com" required><br>
                               </div>
                             </div><!-- Fim Div -->
 
                             <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                               <div class="col-lg-5 col-md-6 col-sm-6">
                                 <label for="ex1">Senha:</label>
-                                <input type="text" class="form-control" maxlength=15  name="senha" placeholder="Informe sua senha"><br>
+                                <input type="password" class="form-control" maxlength=15  name="senha" placeholder="Informe sua senha"  required><br>
                               </div>
                             </div><!-- Fim Div -->
 
                             <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                               <div class="col-lg-5 col-md-6 col-sm-6">
                                 <label for="ex1">Confirmar Senha:</label>
-                                <input type="text" class="form-control" maxlength=15  name="confirma_senha" placeholder="Confirme sua senha"><br>
+                                <input type="password" class="form-control" maxlength=15  name="confirma_senha" placeholder="Confirme sua senha" required><br>
                               </div>
                             </div><!-- Fim Div -->
 
