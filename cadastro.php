@@ -11,9 +11,15 @@ if($_POST){
       $erro[] = "Campo $key em branco";
     }
   }
+$senha = $_POST["senha"];
+$confirmar = $_POST["confirma_senha"];
 
-  if($_POST['senha'] != $_POST['confirma_senha']){
+  if($confirmar !== $senha){
     $erro[] = "Senha e Confirmar Senha devem ser iguais";
+  } else {
+    $senha_cripto = password_hash($senha, PASSWORD_DEFAULT);
+    $_POST["senha"] = $senha_cripto;
+    unset ($_POST["confirmar"]);
   }
 
 

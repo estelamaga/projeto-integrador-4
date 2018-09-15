@@ -16,6 +16,7 @@
     <label for="">Senha:</label>
     <input required type="password" name="senha" placeholder="******" class="form-control">
     <!-- <label> <input type="checkbox"> Lembrar usuario</label> -->
+
     <a style="font-size: 10px;" href="esqueciMinhaSenha.php"> Esqueci minha senha</a>
     <br>
     <button class="btn" type="submit">Entrar </button>
