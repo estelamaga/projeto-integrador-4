@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-if (isset($_SESSION["email"])){
-  $emailSessao=$_SESSION["email"];
+
+  $emailSessao=(isset($_SESSION["email"]))?$_SESSION["email"]:"";
   //header ("Location:index.php");
-}
+
 
  ?>
 
