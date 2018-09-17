@@ -1,16 +1,11 @@
-<html>
-<?php include 'head.php'; ?>
-
-<body>
-    <?php include 'navbar-vero.php';  ?>
-    <?php include 'navbar-two-vero.php'; ?>
+<?php include('header.php'); ?>
 
 <div class="container">
 		<div class="card">
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
-						
+
 						<div class="preview-pic tab-content">
 						  <div class="tab-pane active" id="pic-1"><img src="images/palmeiras1.png" /></div>
 						  <div class="tab-pane" id="pic-2"><img src="images/palmeiras1.png" /></div>
@@ -25,7 +20,7 @@
 						  <li><a data-target="#pic-4" data-toggle="tab"><img src="images/palmeiras1.png" /></a></li>
 						  <li><a data-target="#pic-5" data-toggle="tab"><img src="images/palmeiras1.png" /></a></li>
 						</ul>
-						
+
 					</div>
 					<div class="details col-md-6">
 						<h3 class="product-title">Camiseta Palmeiras Crefisa</h3>
@@ -60,9 +55,5 @@
 			</div>
 		</div>
     </div>
-    
-    <?php include 'footer-vero.php'; ?>
 
-</body>
-
-</html>
+<?php include 'footer-vero.php'; ?>

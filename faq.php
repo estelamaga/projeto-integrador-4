@@ -1,9 +1,4 @@
-<html>
-<?php include 'head.php'; ?>
-
-<body>
-    <?php include 'navbar-vero.php';  ?>
-    <?php include 'navbar-two-vero.php'; ?>
+<?php include('header.php'); ?>
 
     <div class="container">
         <h1 class="text-center">Perguntas frequentes</h1>
@@ -125,9 +120,5 @@
             </div>
          </div>
         </div>
-    
-        <?php include 'footer-vero.php'; ?>
 
-</body>
-
-</html>
+<?php include 'footer-vero.php'; ?>

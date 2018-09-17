@@ -1,14 +1,9 @@
-<html>
-<?php include 'head.php'; ?>
-
-<body>
-    <?php include 'navbar-vero.php';  ?>
-    <?php include 'navbar-two-vero.php'; ?>
+<?php include('header.php'); ?>
 
 
     <div class="container-fluid">
         <h2 class="text-center">Produtos Ecologicos</h2>
-        
+
 
 
 <div class="destaque col-xs-12">
@@ -148,10 +143,6 @@
             </div>
         </div>
 
- 
+
 
     <?php include 'footer-vero.php'; ?>
-
-</body>
-
-</html>

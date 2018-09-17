@@ -12,4 +12,4 @@
 	<!-- /*essa div abaixo eh o fechamento do container todo*/ -->
 </div>
 
-<?php include("footer.php") ?>
+<?php include("footer-vero.php") ?>
