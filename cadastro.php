@@ -11,6 +11,9 @@ if($_POST){
       $erro[] = "Campo $key em branco";
     }
   }
+
+  // inicio do criptografando a senha e salvando-a somente depois de
+  // confirmar se ela eh igual ao confirmar a senha
 $senha = $_POST["senha"];
 $confirmar = $_POST["confirma_senha"];
 
@@ -21,7 +24,7 @@ $confirmar = $_POST["confirma_senha"];
     $_POST["senha"] = $senha_cripto;
     unset ($_POST["confirmar"]);
   }
-
+// fim da criptografia e checagem 
 
   if(count($erro) === 0){
     // O formulario deve ser validado do lado do servidor.
