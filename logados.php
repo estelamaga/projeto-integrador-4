@@ -6,21 +6,10 @@ session_start();
   //header ("Location:index.php");
 
 
- ?>
-
- <!DOCTYPE html>
- <html lang="en" dir="ltr">
-   <head>
-     <meta charset="utf-8">
-     <title></title>
-   </head>
-   <body>
-     <?php include('header.html');
-     ?>
-     <div class="container-fulid">
+include('header.php');
+?>
+   <div class="container-fulid">
      <h1 class="logados"><?php echo "Ola, $emailSessao"; ?></h1>
       <p id="teste"><a class="logoff" href="logoff.php">Logout</a></p>
-      <?php include('footer.html'); ?>
    </div>
-   </body>
- </html>
+   <?php include('footer-vero.php'); ?>

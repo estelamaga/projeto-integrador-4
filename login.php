@@ -1,5 +1,5 @@
-<?php include('header.html');
-?>
+<?php include('header.php'); ?>
+
   <div class="container">
     <form class="text-center form-login" method="POST" action="verificaLogin.php">
     <h1> Fazer login</h1>
@@ -24,7 +24,7 @@
     <br>
     <button class="btn" type="submit">Entrar </button>
     <br>
-  
+
 
 
     <br>
@@ -35,4 +35,4 @@
     </form>
   </div>
   <!-- fim do formulario -->
-<?php include('footer.html'); ?>
+<?php include('footer-vero.php'); ?>
