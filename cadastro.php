@@ -22,7 +22,7 @@ $confirmar = $_POST["confirma_senha"];
   } else {
     $senha_cripto = password_hash($senha, PASSWORD_DEFAULT);
     $_POST["senha"] = $senha_cripto;
-    unset ($_POST["confirmar"]);
+    unset ($_POST["confirma_senha"]);
   }
 // fim da criptografia e checagem 
 
