@@ -1,9 +1,3 @@
-<?php include('header.php'); ?>
-
-  <div class="container">
-    <form class="text-center form-login" method="POST" action="verificaLogin.php">
-    <h1> Fazer login</h1>
-    <br>
     <?php
     session_start();
       if(isset($_GET['error'])){
@@ -13,12 +7,20 @@
       }
     ?>
 
+<?php include('header.php'); ?>
+
+  <div class="container">
+    <form class="text-center form-login" method="POST" action="verificaLogin.php">
+    <h1> Fazer login</h1>
+    <br>
+
+
     <!--inicio do formulario  -->
     <label for="">Email:</label>
-    <input required type="text" name="email" placeholder="Ex:pedro@hotmail.com" class="form-control" value="<?php echo $_COOKIE['CookieEmail']?>">
+    <input required type="text" name="email" placeholder="Ex:pedro@hotmail.com" class="form-control" value="<?php echo isset($_COOKIE['CookieEmail']) ? $_COOKIE['CookieEmail']: '';?>">
     <label for="">Senha:</label>
-    <input required type="password" name="senha" placeholder="Digite sua senha" class="form-control" value="<?php echo $_COOKIE['CookieSenha']?>">
-    <label> <input type="checkbox" style="text-align:center;" name="lembrar" value="sim" <?php echo $_COOKIE['CookieLembrete']?>> Lembrar usuario</label> <br><br>
+    <input required type="password" name="senha" placeholder="Digite sua senha" class="form-control" value="<?php echo isset($_COOKIE['CookieSenha'])? $_COOKIE['CookieSenha']: '';?>">
+    <label> <input type="checkbox" style="text-align:center;" name="lembrar" value="sim" <?php echo isset($_COOKIE['CookieLembrete'])? 'checked': ''; ?>> Lembrar usuario</label> <br><br>
 
     <a style="font-size: 10px;" href="esqueciMinhaSenha.php"> Esqueci minha senha</a>
     <br>

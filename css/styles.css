@@ -13,6 +13,7 @@ body {
 .mynav .nav>li>a {
     padding-top: 30px;
     padding-bottom: 30px;
+    color: #fff;
 }
 
 .mynav .navbar-toggle {
@@ -20,16 +21,38 @@ body {
     margin: 25px 15px 25px 0;
 }
 
-.navbar-form {
-    margin-top: 25px;
+.search{
+    margin: 23px 0;
 }
 
-input.form-control {
+.nav .cart{
+    font-size: 24px;
+    padding: 27px 0 0 !important;
+}
+#espaco {
     padding-right: 400px !important;
 }
 
+.cart-mobile{
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    margin: 27px 0;
+}
+
+.navbar-toggle:hover, .navbar-toggle, .navbar-toggle:active, .navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 1299px){
+    .container{
+        width: 100%;
+    }
+}
 @media (max-width: 700px) {
-    input.form-control {
+    #espaco {
         padding-right: 200px !important;
     }
 }
@@ -297,7 +320,9 @@ input.form-control {
 
 
 
-
+#espaco1{
+  margin-bottom:10px !important;
+}
 
 
 

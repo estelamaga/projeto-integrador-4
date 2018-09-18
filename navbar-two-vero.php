@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-static-top example6" id="nav2">
+<nav class="navbar navbar-inverse navbar-static-top example6 hidden-xs" id="nav2">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#secNav">

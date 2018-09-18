@@ -111,7 +111,7 @@ include('header.php');
 
         <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
           <div class="col-lg-2 col-md-6 col-sm-3">
-            <input type="submit" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;" value="Cadastrar">
+            <input id="espaco2" type="submit" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;" value="Cadastrar">
           </div>
         </div><!-- Fim Button -->
 

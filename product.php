@@ -42,7 +42,7 @@
 							<span class="size" data-toggle="tooltip" title="medium">M</span>
 							<span class="size" data-toggle="tooltip" title="large">G</span>
 						</h5>
-						<h5 class="colors">colors:
+						<h5 class="colors">Cor:
 							<span class="color green"></span>
 							<!-- <span class="color blue"></span> -->
 						</h5>
