@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once("usuarioClass.php");
 
 if($_POST){
 
@@ -26,27 +27,13 @@ if($_POST){
 
   if(count($erro) === 0){
     // O formulario deve ser validado do lado do servidor.
-    $arquivo="usuarios.json";
 
-    if (file_exists($arquivo)) {
-      $dados=file_get_contents($arquivo);
-      $dados=json_decode($dados,true); // para array associativo // adicionei , true para tornar o array associativo// sem ele ele retorna um objeto.
-      $formdados=$_POST;
-      $nomeDoARquivo = $_FILES["fotoPerfil"]["name"];
-      $caminhoDaFoto = "images/fotosUsuario/".$nomeDoARquivo;
-      $guardaRetorno= move_uploaded_file($_FILES["fotoPerfil"]["tmp_name"], $caminhoDaFoto);
-      $formdados["caminhofoto"]=$caminhoDaFoto;
-      $dados["usuarios"][]=$formdados;
-      $dadosemjson=json_encode($dados); //json string
-      file_put_contents($arquivo,$dadosemjson);
-      header('Location: login.php?cadastro=true');
-    }else{
-      $dados=["usuarios"=>[]];
-      $dados["usuarios"][]=$_POST;
-      $formdados=json_encode($dados); //json string
-      file_put_contents($arquivo,$formdados);
-      echo "arquivo criado";
-    }
+    $nomeDoARquivo = $_FILES["fotoPerfil"]["name"];
+    $caminhoDaFoto = "images/fotosUsuario/".$nomeDoARquivo;
+    $guardaRetorno = move_uploaded_file($_FILES["fotoPerfil"]["tmp_name"], $caminhoDaFoto);
+
+$usuario = new usuarioClass($_POST["tipoDePessoa"], $_POST);
+$usuario->cadastrarUsuario();
   }
 
 }
@@ -63,7 +50,26 @@ include('header.php');
 
         <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
           <div class="col-lg-5 col-md-6 col-sm-6">
-            <label for="ex1">Nome:</label>
+            <label for="ex1">Tipo de Pessoa:</label>
+            <select type="text" class="form-control" id="ex1" maxlength="40"  name="tipoDePessoa">
+              <option value="pf">Pessoa Fisica</option>
+              <option value="pj">Pessoa Juridica</option>
+            </select><br>
+          </div>
+        </div><!-- Fim Div -->
+
+
+        <!--INICIO JAVASCRIPT = ESPERAR O JAVASCRIPT PARA ACRESCENTAR ESSES DADOS NO FORMULARIO -->
+        <!-- private $sobrenome;
+        private $dataDeNascimento;
+        private $cpf;
+        private $cnpj;
+        private $sexo; -->
+        <!-- FIM JAVASCRIPT -->
+
+        <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+          <div class="col-lg-5 col-md-6 col-sm-6">
+            <label for="ex1">Nome ou Nome da Empresa:</label>
             <input type="text" class="form-control" id="ex1" maxlength="40"  name="nome" placeholder="Insira seu nome" value='<?php echo isset($_POST['nome']) ? ($_POST['nome']): "" ?>'><br>
           </div>
         </div><!-- Fim Div -->
@@ -72,6 +78,13 @@ include('header.php');
           <div class="col-lg-5 col-md-6 col-sm-6">
             <label for="ex2">Email:</label>
             <input type="email" class="form-control" id="ex2" maxlength="50"  name="email" placeholder="usuario@usuario.com" value='<?php echo isset($_POST['email']) ? ($_POST['email']): "" ?>'><br>
+          </div>
+        </div><!-- Fim Div -->
+
+        <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+          <div class="col-lg-5 col-md-6 col-sm-6">
+            <label for="ex2">Telefone:</label>
+            <input type="email" class="form-control" id="ex2" maxlength="50"  name="telefone" placeholder="(11) 9-6292-8739" value='<?php echo isset($_POST['telefone']) ? ($_POST['telefone']): "" ?>'><br>
           </div>
         </div><!-- Fim Div -->
 
