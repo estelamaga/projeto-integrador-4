@@ -44,10 +44,16 @@ public function _construct($tipoDePessoa, $valores){
 
 }
 
-public function cadastrarUsuario(){
-  if ($this->tipoDePessoa == "pf"){
+public function cadastrarUsuario($tipo){
+  echo $tipo;
+  // if ($this->tipoDePessoa == "pf"){
+  //   $this->cadastrarUsuarioPessoaFisica();
+  // } else {
+  //   $this->cadastrarUsuarioPessoaJuridica();
+  // }
+  if($tipo == "pf"){
     $this->cadastrarUsuarioPessoaFisica();
-  } else {
+  }else{
     $this->cadastrarUsuarioPessoaJuridica();
   }
 }
@@ -58,17 +64,19 @@ public function cadastrarUsuarioPessoaFisica(){
         $db_pass = 'root';
         try{
         $db = new PDO($dsn, $db_user, $db_pass);
-        $query = $db->prepare('INSERT INTO usuarios("nome", "email", "senha", "sobrenome", "cpf", "sexo", "dataDeNascimento", "telefone") values (:nome, :email, :senha, :sobrenome, :cpf, :sexo, :dataDeNascimento, :telefone)');
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $query = $db->prepare('INSERT INTO usuarios("nome", "email", "senha", "sobrenome", "cpf_cnpj", "sexo", "data_de_nascimento", "telefone") values (:nome, :email, :senha, :sobrenome, :cpf, :sexo, :data_de_nascimento, :telefone)');
         $query->execute([':nome' => $this->nome,
-        ':email' => $$this->email,
+        ':email' => $this->email,
         ':senha' => $this->senha,
         ':sobrenome' => $this->sobrenome,
         ':cpf' => $this->cpf,
         ':sexo' => $this->sexo,
-        ':dataDeNascimento' => $this->dataDeNascimento,
+        ':data_de_nascimento' => $this->dataDeNascimento,
         ':telefone' => $this->telefone]);
 
-      return $db->lastInsetId();
+      return $db->lastInsertId();
 
         }catch(PDOException $e){
         echo $e->getMessage();
@@ -83,9 +91,12 @@ public function cadastrarUsuarioPessoaJuridica(){
         $db_pass = 'root';
         try{
         $db = new PDO($dsn, $db_user, $db_pass);
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $query = $db->prepare('INSERT INTO usarios("nome", "email", "senha", "cnpj", "telefone") values (:nome, :email, :senha, :cnpj, :telefone)');
         $query->execute([':nome' => $this->nome, ':email' => $this->email, ':senha' => $this->senha, ':cnpj' => $this->cnpj, 'telefone' => $this->telefone]);
-        return $db->lastInsetId();
+        var_dump($query->fetchAll());
+
+        return $db->lastInsertId();
 
         }catch(PDOException $e){
         echo $e->getMessage();

@@ -33,7 +33,7 @@ if($_POST){
     $guardaRetorno = move_uploaded_file($_FILES["fotoPerfil"]["tmp_name"], $caminhoDaFoto);
 
 $usuario = new usuarioClass($_POST["tipoDePessoa"], $_POST);
-$usuario->cadastrarUsuario();
+$usuario->cadastrarUsuario($_POST["tipoDePessoa"]);
   }
 
 }
@@ -84,7 +84,7 @@ include('header.php');
         <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
           <div class="col-lg-5 col-md-6 col-sm-6">
             <label for="ex2">Telefone:</label>
-            <input type="email" class="form-control" id="ex2" maxlength="50"  name="telefone" placeholder="(11) 9-6292-8739" value='<?php echo isset($_POST['telefone']) ? ($_POST['telefone']): "" ?>'><br>
+            <input type="text" class="form-control" id="ex5" maxlength="50"  name="telefone" placeholder="11962928739" value='<?php echo isset($_POST['telefone']) ? ($_POST['telefone']): "" ?>'><br>
           </div>
         </div><!-- Fim Div -->
 
