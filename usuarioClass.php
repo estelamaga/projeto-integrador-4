@@ -92,7 +92,7 @@ public function cadastrarUsuarioPessoaJuridica(){
         try{
         $db = new PDO($dsn, $db_user, $db_pass);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $query = $db->prepare('INSERT INTO usarios("nome", "email", "senha", "cnpj", "telefone") values (:nome, :email, :senha, :cnpj, :telefone)');
+        $query = $db->prepare('INSERT INTO usuarios("nome", "email", "senha", "cnpj", "telefone") values (:nome, :email, :senha, :cnpj, :telefone)');
         $query->execute([':nome' => $this->nome, ':email' => $this->email, ':senha' => $this->senha, ':cnpj' => $this->cnpj, 'telefone' => $this->telefone]);
         var_dump($query->fetchAll());
 

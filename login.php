@@ -1,10 +1,19 @@
     <?php
     session_start();
-      if(isset($_GET['error'])){
-        echo "<div class='alert alert-danger'>Autenticação negada</div>";
-      } elseif(isset($_GET['cadastro'])){
+    include_once("loginClass.php");
+
+      if($_POST){
+        echo 'entrou no if';
+        $login = new loginClass($_POST["email"], $_POST["senha"]);
+        var_dump($login);
+        $login->logar();
+        var_dump($login);
+
+    if(isset($_POST['error'])){
+      echo "<div class='alert alert-danger'>Autenticação negada</div>";
+      } elseif(isset($_POST['cadastro'])){
         echo "<div class='alert alert-success'>Cadastro realizado com sucesso</div>";
-      }
+    }
     ?>
 
 <?php include('header.php'); ?>
