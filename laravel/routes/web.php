@@ -16,3 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index');
+Route::get('/about', 'AboutController@about');
+Route::get('/cadastro', 'CadastroController@cadastro');
+Route::get('/comingsoon', 'ComingsoonController@comingsoon');
+Route::get('/contato', 'ContatoController@contato');
+Route::get('/esqueciminhasenha', 'EsqueciMinhaSenhaController@esqueciminhasenha');
+Route::get('/faq', 'FaqController@faq');
+Route::get('/logados', 'LogadosController@logados');
+Route::get('/login', 'LoginController@login');

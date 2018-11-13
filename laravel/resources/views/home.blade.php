@@ -1,5 +1,5 @@
-<?php // include('header.php'); ?>
-
+@extends('layouts.master')
+@section('content')
   <!-- Carrossel -->
   <div class="container-fluid">
     <div class="row">
@@ -24,6 +24,7 @@
             </div>
           </div>
         </div>
+
 
         <!-- Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -129,4 +130,4 @@
     </div>
   </div>
 
-<?php // include 'footer-vero.php' ?>
+@stop

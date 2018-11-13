@@ -1,0 +1,245 @@
+/*
+CORES PADRÕES
+gold: #CDA34F,
+daisy: #E9E7DA,
+stem: #636B46,
+greenery: #373F27
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #373F27;
+  font-family: 'Poppins', sans-serif;
+}
+/* NAVBAR.PHP */
+/*INICIO DA NAVBAR */
+.my-navbar{
+  background-color: #f2f2f2;
+}
+
+ul.nav.navbar-nav{
+  display: flex;
+  float: right;
+}
+ul.nav.navbar-nav li{
+  align-self: center;
+}
+ul.nav.navbar-nav li a{
+  color: #636B46;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.my-btn{
+  background: #666;
+  color:white;
+}
+
+/* button.btn.my-btn:hover{
+  color: #aba232;
+  background: #234913;
+} */
+
+.cor-texto ul li a{
+  color: #302013;
+}
+
+.logo-img img{
+  width: 80px;
+  float: left;
+}
+
+.cart{
+  width: 56px;
+  float: right;
+  color: rgb(6, 75, 7);
+}
+
+/* INIIO DO DROPDOWN DA NAVBAR */
+.navbar-nav>li>.dropdown-menu{
+  background: rgb(215, 240, 162);
+}
+.navbar-default .navbar-nav>.open>a:hover{
+  background: rgb(215, 240, 162);
+}
+.navbar-default .navbar-nav>.open>a:focus{
+  background: rgb(215, 240, 162);
+}
+/* FIM DO DROPDOWN DA NAVBAR */
+/*FIM DA NAVBAR */
+
+
+
+
+/* ABOUT.PHP */
+/* inicio do about */
+.img-about img{
+  width: 440px;
+  height: 220px;
+}
+
+h2{
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+/* fim do about */
+
+
+
+/* HELPING-HANDS.PHP */
+
+h1{
+  margin-top: 100px;
+  width: 100%;
+  /* text-align: center; */
+  color:#636b46;
+
+}
+
+h1.subtitle {
+  /* text-align: center; */
+  margin-left: 50px;
+  margin-top: 0;
+}
+
+h2{
+  width: 100%;
+  /* text-align: center; */
+}
+
+img{ /*IMPORTANT!*/
+  width: 100%;
+}
+
+p{
+  padding: 20px;
+}
+/* fim do helping-hands */
+
+
+
+/* FOOTER-NAVBAR.PHP */
+/*INICIO DO FOOTER */
+footer{
+  background-color: #636B46;
+  width: 100%;
+  padding-top: 15px;
+  margin-top: 25px;
+}
+
+footer ul{
+  text-align: center;
+  width: 100%;
+}
+
+footer ul li{
+  list-style: none;
+}
+
+footer ul li a{
+  color: #fff;
+  font-weight: 300;
+}
+footer a:hover{
+  color: #fff;
+}
+
+ul.payment.img img{
+  width: 10px;
+}
+
+
+/*FIM DO FOOTER*/
+
+#teste{
+  text-align: center;
+}
+
+h1.logados {
+  text-align: center;
+}
+
+
+/* ESQUECI MINHA SENHA */
+
+.esqueci button{
+  background-color: #636B46;
+  color: white;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left:12px;
+  padding-right: 12px;
+}
+
+ .logoff{
+  text-align: center;
+}
+
+
+/* estilo login */
+.form-login h1{
+  text-transform: uppercase;
+}
+.form-login button{
+  background-color: #636B46;
+  color: white;
+  margin: 15px;
+}
+.form-login button:hover{
+  background-color: #CDA34F;
+}
+.form-login input{
+  border-color: #ccc;
+}
+
+form.form-login{
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.form-login label{
+  float: left;
+margin-top: 15px;
+color: #CDA34F;
+font-weight: 300;
+}
+
+.form-login button.Facebook{
+  margin: 15px;
+  background-color: #CDA34F;
+}
+
+.form-login p{
+  margin:15px auto;
+}
+
+/* fim estilo login */
+
+/* estilo faq */
+
+.faq h3{
+  color: #373F27;
+}
+
+.faq h4{
+  margin-top: 0px;
+  color: #373F27;
+}
+
+.faq .pergunta{
+margin-bottom: 10px;
+
+}
+
+.faq{
+  padding-top: 50px;
+}
