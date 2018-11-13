@@ -271,7 +271,8 @@ body {
 /* Produtos .php pag 2 itens */
 .products {
     height: 300px;
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
     margin-top: 10px;
     /* margin-left: 29px; */
     /* margin-left:40px; */

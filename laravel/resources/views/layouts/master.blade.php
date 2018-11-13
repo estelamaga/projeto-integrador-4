@@ -13,8 +13,6 @@
 </head>
 
 <body>
-  <?php //include 'navbar-vero.php' ?>
-  <!-- FIM NAVBAR -->
 
   <div class="mynav">
     <nav class="navbar navbar-inverse navbar-static-top">
@@ -45,7 +43,7 @@
           <div id="mNav" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="login.php">Login</a>
+                <a href="login">Login</a>
               </li>
               <li class="hidden-xs">
                 <a href="#" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
@@ -56,9 +54,9 @@
               <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Roupas
                 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="produtos.php">Camisetas</a></li>
-                <li><a href="produtos.php">Agasalhos</a></li>
-                <li><a href="produtos.php">Vestidos</a></li>
+                <li><a href="produtos">Camisetas</a></li>
+                <li><a href="produtos">Agasalhos</a></li>
+                <li><a href="produtos">Vestidos</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Pets</li>
                 <li><a href="#">Roupas</a></li>
@@ -92,9 +90,6 @@
     </nav>
   </div>
 
-  <!-- INICIO NAVBAR SECUNDARIA -->
-  <?php //include 'navbar-two-vero.php' ?>
-
   <nav class="navbar navbar-inverse navbar-static-top example6 hidden-xs" id="nav2">
       <div class="container">
         <div class="navbar-header">
@@ -111,9 +106,9 @@
               <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Roupas
                 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="produtos.php">Camisetas</a></li>
-                <li><a href="produtos.php">Agasalhos</a></li>
-                <li><a href="produtos.php">Vestidos</a></li>
+                <li><a href="produtos">Camisetas</a></li>
+                <li><a href="produtos">Agasalhos</a></li>
+                <li><a href="produtos">Vestidos</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Pets</li>
                 <li><a href="#">Roupas</a></li>
@@ -160,7 +155,7 @@
               <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
-                <li><a href="produtos.php">Produtos</a></li>
+                <li><a href="produtos">Produtos</a></li>
               </ul>
             </div>
             <div class="col-sm-2">
@@ -173,8 +168,8 @@
             <div class="col-sm-2">
               <h5>Suporte</h5>
               <ul>
-                <li><a href="faq.php">FAQ</a></li>
-                <li><a href="faq.php">Centro de Ajuda</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="faq">Centro de Ajuda</a></li>
                 <!-- <li><a href="#">Forums</a></li> -->
               </ul>
             </div>

@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-  <form class="text-center form-login" method="POST" action="verificaLogin.php">
+  <form class="text-center form-login" method="POST" action="verificalogin">
   <h1> Fazer login</h1>
   <br>
 
