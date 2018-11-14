@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-  <form class="esqueci form-login" action="esqueciMinhaSenha.php" method="post">
+  <form class="esqueci form-login" action="/esqueciminhasenha" method="post">
     <h1 class="esqueci">Esqueceu sua senha?</h1>
     Digite o email que voce utiliza para acessar sua conta <br>
     <input class="form-control" type="text" name="" value=""><br><br>

@@ -8,7 +8,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <title>Eco Green</title>
 </head>
 
@@ -18,15 +18,16 @@
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header col-md-3 col-sm-3">
-          <a href="#" class="cart-mobile visible-xs"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+          <a href="#" class="cart-mobile visible-xs">
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mNav">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">
-            <img src="images/logoalgosust.png" alt="algosust-logo" id="navlogo">
+          <a class="navbar-brand" href="/home">
+            <img src="/images/logoalgosust.png" alt="algosust-logo" id="navlogo">
           </a>
         </div>
         <div class="col-md-5 col-sm-5 hidden-xs">
@@ -43,7 +44,7 @@
           <div id="mNav" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="login">Login</a>
+                <a href="/login">Login</a>
               </li>
               <li class="hidden-xs">
                 <a href="#" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
@@ -54,9 +55,9 @@
               <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Roupas
                 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="produtos">Camisetas</a></li>
-                <li><a href="produtos">Agasalhos</a></li>
-                <li><a href="produtos">Vestidos</a></li>
+                <li><a href="/produtos">Camisetas</a></li>
+                <li><a href="/produtos">Agasalhos</a></li>
+                <li><a href="/produtos">Vestidos</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Pets</li>
                 <li><a href="#">Roupas</a></li>
@@ -148,14 +149,14 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-3">
-              <a href="#"><img src="images/logoalgosust.png"></a>
+              <a href="#"><img src="/images/logoalgosust.png"></a>
             </div>
             <div class="col-sm-2">
               <h5>Início</h5>
               <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="cadastro.php">Cadastro</a></li>
-                <li><a href="produtos">Produtos</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/cadastro">Cadastro</a></li>
+                <li><a href="/produtos">Produtos</a></li>
               </ul>
             </div>
             <div class="col-sm-2">

@@ -270,10 +270,11 @@ body {
 
 /* Produtos .php pag 2 itens */
 .products {
-    height: 300px;
+    min-height: 300px;
     /* width: 250px; */
     width: 100%;
     margin-top: 10px;
+    padding-bottom: 15px;
     /* margin-left: 29px; */
     /* margin-left:40px; */
 }
@@ -305,7 +306,7 @@ body {
     /* margin-left:40px; */
 }
 
-#buy2 {
+.products a.ver-mais {
     margin-top: 10px;
     background-color: #636b46;
     border-color: gray;
