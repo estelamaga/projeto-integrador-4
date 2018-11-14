@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::get('/about', 'AboutController@about');
 Route::get('/cadastro', 'CadastroController@cadastro');
+Route::post('/cadastro/pessoa-fisica', 'CadastroController@cadastroPessoaFisica');
+Route::post('/cadastro/pessoa-juridica', 'CadastroController@cadastroPessoaJuridica');
 Route::get('/comingsoon', 'ComingsoonController@comingsoon');
 Route::get('/contato', 'ContatoController@contato');
 Route::get('/esqueciminhasenha', 'EsqueciMinhaSenhaController@esqueciminhasenha');
