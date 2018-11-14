@@ -7,6 +7,24 @@
       <div class="col-xs-12">
         <h1>Cadastro</h1>
       </div>
+      <div class="col-xs-12">
+        <ul  class="nav nav-pills">
+    			<li class="active">
+            <a  href="#pessoa-fisica" data-toggle="tab">Pessoa Fisica</a>
+    			</li>
+    			<li><a href="#pessoa-juridica" data-toggle="tab">Pessoa Jurídica</a>
+    			</li>
+    		</ul>
+        <div class="tab-content clearfix">
+  			  <div class="tab-pane active" id="pessoa-fisica">
+            <h3>Content's background color is the same for the tab</h3>
+  				</div>
+  				<div class="tab-pane" id="pessoa-juridica">
+            <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+  				</div>
+        </div>
+      </div>
+
       <form  action="cadastro.php" method="post" enctype="multipart/form-data" class="row"><!-- Inicio Form -->
 
         <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
