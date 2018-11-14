@@ -24,5 +24,8 @@ Route::get('/faq', 'FaqController@faq');
 Route::get('/home', 'HomeController@index');
 Route::get('/logados', 'LogadosController@logados');
 Route::get('/login', 'LoginController@login');
+
+
+
 Route::get('/produto/{id}', 'ProdutosController@produto');
 Route::get('/produtos', 'ProdutosController@produtos');
