@@ -15,16 +15,22 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+
+    protected $fillable = ['email', 'password'];
 
     /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
      */
+    protected $primaryKey = 'usuario_id';
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public $timestamps = false;
+
+    public function setPasswordAttribute($password)
+  {
+      $this->attributes['password'] = \Hash::make($password);
+  }
 }

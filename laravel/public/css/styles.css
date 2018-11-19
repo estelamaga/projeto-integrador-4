@@ -568,11 +568,13 @@ img {
 .form-login h1{
   text-transform: uppercase;
 }
+
 .form-login button{
   background-color: #636B46;
   color: white;
   margin: 15px;
 }
+
 .form-login button:hover{
   background-color: #CDA34F;
 }
@@ -587,7 +589,7 @@ form.form-login{
 }
 
 .form-login label{
-  float: left;
+  /* float: left; */
 margin-top: 15px;
 color: #CDA34F;
 font-weight: 300;
@@ -600,4 +602,20 @@ font-weight: 300;
 
 .form-login p{
   margin:15px auto;
+}
+
+.example6{
+  position: relative;
+  z-index: 9;
+}
+
+.mynav .dropdown-menu{
+  padding: 20px;
+  min-width: 100px;
+  background-color: #636b46;
+  text-align: right;
+}
+
+.mynav .dropdown-menu a{
+  color: #fff;
 }

@@ -33,7 +33,7 @@ class ProdutosController extends Controller
         'fk_categoria_id'=>$request->input('fk_categoria_id')
       ]);
       $produtos->save();
-      return redirect('produtos')
+      return redirect('produtos');
     }
     // CRUD (Create) é executar um INSERT.
 
