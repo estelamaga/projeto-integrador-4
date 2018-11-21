@@ -23,8 +23,15 @@
               {{ csrf_field() }}
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" maxlength="40"  name="username" placeholder="Insira seu username"><br>
+                </div>
+              </div><!-- Fim Div -->
+
+              <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+                <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">Nome</label>
-                  <input type="text" class="form-control" id="name" maxlength="40"  name="name" placeholder="Insira seu nome"><br>
+                  <input type="text" class="form-control" id="name" maxlength="40"  name="name" placeholder="Insira seu username"><br>
                 </div>
               </div><!-- Fim Div -->
 
@@ -102,38 +109,38 @@
   				</div>
   				<div class="tab-pane" id="pessoa-juridica">
             <form  action="/cadastro/pessoa-juridica" method="post" enctype="multipart/form-data" class="row"><!-- Inicio Form -->
+              {{ csrf_field() }}
+              <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                  <label for="ex1">Username:</label>
+                  <input type="text" class="form-control" id="username" maxlength="40"  name="username" placeholder="Insira seu username"><br>
+                </div>
+              </div><!-- Fim Div -->
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">Nome da Empresa:</label>
-                  <input type="text" class="form-control" id="ex1" maxlength="40"  name="nome" placeholder="Insira seu nome" value='<?php echo isset($_POST['nome']) ? ($_POST['nome']): "" ?>'><br>
+                  <input type="text" class="form-control" id="name" maxlength="40"  name="name" placeholder="Insira seu nome"><br>
                 </div>
               </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">CNPJ</label>
-                  <input type="text" class="form-control" id="cnpj" maxlength="40"  name="cnpj" placeholder="Insira seu nome" value='<?php echo isset($_POST['nome']) ? ($_POST['nome']): "" ?>'><br>
+                  <input type="text" class="form-control" id="cnpj" maxlength="40"  name="cnpj" placeholder="Insira seu cnpj"><br>
                 </div>
             </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex2">Email:</label>
-                  <input type="email" class="form-control" id="ex2" maxlength="50"  name="email" placeholder="usuario@usuario.com" value='<?php echo isset($_POST['email']) ? ($_POST['email']): "" ?>'><br>
-                </div>
-              </div><!-- Fim Div -->
-
-              <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
-                <div class="col-lg-5 col-md-6 col-sm-6">
-                  <label for="ex2">Telefone:</label>
-                  <input type="text" class="form-control" id="ex5" maxlength="50"  name="telefone" placeholder="11962928739" value='<?php echo isset($_POST['telefone']) ? ($_POST['telefone']): "" ?>'><br>
+                  <input type="email" class="form-control" maxlength="50"  name="email" id="email" placeholder="usuario@usuario.com"><br>
                 </div>
               </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex3">Senha:</label>
-                  <input type="password" class="form-control" id="ex3" maxlength=15  name="senha" placeholder="Informe sua senha"><br>
+                  <input type="password" class="form-control" id="ex3" maxlength=15  name="password" placeholder="Informe sua senha"><br>
                 </div>
               </div><!-- Fim Div -->
 
@@ -152,17 +159,16 @@
               </div>
 
               <div class="col-md-12">
-                <?php
-                if (isset($erro) && count($erro)) {
-                  ?>
+
+                @if (count($errors) > 0)
                   <div class="alert alert-danger">
-                    <?php
-                    echo "<b>Atenção:</b> <br>";
-                    echo implode ("<br>", $erro);
-                    ?>
+                    <ul>
+                      @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                      @endforeach
+                    </ul>
                   </div>
-                <?php } ?>
-              </div>
+                @endif
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">

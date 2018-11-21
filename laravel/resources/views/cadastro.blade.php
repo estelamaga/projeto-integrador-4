@@ -150,17 +150,16 @@
               </div>
 
               <div class="col-md-12">
-                <?php
-                if (isset($erro) && count($erro)) {
-                  ?>
+
+                @if (count($errors) > 0)
                   <div class="alert alert-danger">
-                    <?php
-                    echo "<b>Atenção:</b> <br>";
-                    echo implode ("<br>", $erro);
-                    ?>
+                    <ul>
+                      @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                      @endforeach
+                    </ul>
                   </div>
-                <?php } ?>
-              </div>
+                @endif
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">

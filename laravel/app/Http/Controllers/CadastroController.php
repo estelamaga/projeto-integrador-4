@@ -10,15 +10,20 @@ use App\Pessoa_juridica;
 
 class CadastroController extends Controller
 {
-    public function cadastro(){
-      return view('cadastro');
-    }
 
     public function cadastroPessoaFisica(Request $request){
 
+      // $this->validate($request,[
+      //   'email'=> 'required|unique:users,email',
+      //   'password'=> 'required',
+      //   'username'=> 'required'
+      //
+      // ]);
+
       $usuario = User::create([
         'email' => $request->input('email'),
-        'password' =>  $request->input('password')
+        'password' =>  $request->input('password'),
+        'username'=> $request->input('username')
       ]);
 
       $usuario->save();
@@ -35,27 +40,28 @@ class CadastroController extends Controller
 
       $pf->save();
 
-      return redirect('/login')->with('status', 'Perfil atualizado!');
+      return redirect('/login');
     }
 
-    public function cadastroPessoaJuri(Request $request){
+    public function cadastroPessoaJuridica(Request $request){
 
       $usuario = User::create([
         'email' => $request->input('email'),
-        'password' =>  $request->input('password')
+        'password' =>  $request->input('password'),
+        'username'=> $request->input('username')
       ]);
 
       $usuario->save();
-      $pj = Pessoa_juridica::create([
-        'nome_fantasia' => $request->input('nome_fantasia'),
-        'cnpj' => $request->input('cnpj'),
-        'users_usuario_id' => $usuario->usuario_i
-      ]);
 
+      $pj = Pessoa_juridica::create([
+        'nome_fantasia' => $request->input('name'),
+        'cnpj' => $request->input('cnpj'),
+        'users_usuario_id' => $usuario->usuario_id
+      ]);
 
       $pj->save();
 
-      return redirect('/login')->with('status', 'Perfil atualizado!');
+      return redirect('/login');
     }
 
 }
