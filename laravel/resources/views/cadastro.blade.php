@@ -36,7 +36,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">Data de Nascimento</label>
-                  <input type="date" class="form-control" id="data_de_nascimento" maxlength="40"  name="data_de_nascimento" placeholder="Insira seu nome"><br>
+                  <input type="date" class="form-control" id="data_de_nascimento" maxlength="40"  name="data_de_nascimento" placeholder="Ex: 01/01/1999"><br>
                 </div>
               </div><!-- Fim Div -->
 

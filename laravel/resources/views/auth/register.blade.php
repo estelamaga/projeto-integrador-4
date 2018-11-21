@@ -31,28 +31,28 @@
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">Nome</label>
-                  <input type="text" class="form-control" id="name" maxlength="40"  name="name" placeholder="Insira seu username"><br>
+                  <input type="text" class="form-control" id="name" maxlength="40"  name="name" placeholder="Insira seu nome"><br>
                 </div>
               </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">Sobrenome</label>
-                  <input type="text" class="form-control" id="sobrenome" maxlength="40"  name="sobrenome" placeholder="Insira seu nome"><br>
+                  <input type="text" class="form-control" id="sobrenome" maxlength="40"  name="sobrenome" placeholder="Insira seu sobrenome"><br>
                 </div>
               </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">Data de Nascimento</label>
-                  <input type="date" class="form-control" id="data_de_nascimento" maxlength="40"  name="data_de_nascimento" placeholder="Insira seu nome"><br>
+                  <input type="date" class="form-control" id="data_de_nascimento" maxlength="40"  name="data_de_nascimento" placeholder="Ex: 01/01/1999"><br>
                 </div>
               </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">CPF</label>
-                  <input type="text" class="form-control" id="cpf" maxlength="40"  name="cpf" placeholder="Insira seu nome"><br>
+                  <input type="text" class="form-control" id="cpf" maxlength="40"  name="cpf" placeholder="Ex: 123.456.789-12"><br>
                 </div>
               </div><!-- Fim Div -->
 
@@ -67,14 +67,14 @@
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex1">Sexo</label>
-                  <input type="text" class="form-control" id="sexo" maxlength="40"  name="sexo" placeholder="Insira seu nome"><br>
+                  <input type="text" class="form-control" id="sexo" maxlength="40"  name="sexo" placeholder="Insira seu sexo"><br>
                 </div>
               </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
                   <label for="ex2">Telefone</label>
-                  <input type="text" class="form-control" id="telefone" maxlength="50"  name="telefone" placeholder="11962928739"><br>
+                  <input type="text" class="form-control" id="telefone" maxlength="50"  name="telefone" placeholder="Ex: (99) 99999-9999"><br>
                 </div>
               </div><!-- Fim Div -->
 
@@ -112,13 +112,13 @@
               {{ csrf_field() }}
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
-                  <label for="ex1">Username:</label>
+                  <label for="ex1">Username</label>
                   <input type="text" class="form-control" id="username" maxlength="40"  name="username" placeholder="Insira seu username"><br>
                 </div>
               </div><!-- Fim Div -->
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
-                  <label for="ex1">Nome da Empresa:</label>
+                  <label for="ex1">Nome da Empresa</label>
                   <input type="text" class="form-control" id="name" maxlength="40"  name="name" placeholder="Insira seu nome"><br>
                 </div>
               </div><!-- Fim Div -->
@@ -132,21 +132,21 @@
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
-                  <label for="ex2">Email:</label>
+                  <label for="ex2">Email</label>
                   <input type="email" class="form-control" maxlength="50"  name="email" id="email" placeholder="usuario@usuario.com"><br>
                 </div>
               </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
-                  <label for="ex3">Senha:</label>
+                  <label for="ex3">Senha</label>
                   <input type="password" class="form-control" id="ex3" maxlength=15  name="password" placeholder="Informe sua senha"><br>
                 </div>
               </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-6">
-                  <label for="ex4">Confirmar Senha:</label>
+                  <label for="ex4">Confirmar Senha</label>
                   <input type="password" class="form-control" id="ex4" maxlength=15  name="confirma_senha" placeholder="Confirme sua senha"><br>
                 </div>
               </div><!-- Fim Div -->
