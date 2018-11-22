@@ -12,9 +12,9 @@
       <div class="col-xs-12">
         <ul  class="nav nav-pills">
     			<li class="active">
-            <a  href="#pessoa-fisica" data-toggle="tab">Pessoa Fisica</a>
+            <a  href="#pessoa-fisica" data-toggle="tab" id="pessoaesq">Pessoa Fisica</a>
     			</li>
-    			<li><a href="#pessoa-juridica" data-toggle="tab">Pessoa Jurídica</a>
+          <li><a href="#pessoa-juridica" data-toggle="tab" >Pessoa Jurídica</a>
     			</li>
     		</ul>
         <div class="tab-content clearfix">
@@ -172,7 +172,7 @@
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">
-                  <input id="espaco2" type="submit" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;" value="Cadastrar">
+                  <input id="espaco2" type="submit" class="btn btn-success btn-lg btn-block"  value="Cadastrar">
                 </div>
               </div><!-- Fim Button -->
 
