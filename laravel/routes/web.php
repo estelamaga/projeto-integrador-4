@@ -27,9 +27,22 @@ Route::get('/logados', 'LogadosController@logados');
 Route::get('/login', 'LoginController@login');
 
 
+Route::get('/produto', 'ProdutosController@listaProduto');
+Route::get('/produto/adicionar', 'ProdutosController@novo');
+Route::post('/produto/adicionar', 'ProdutosController@AdicionarProduto');
 
-Route::get('/produto/{id}', 'ProdutosController@produto');
-Route::get('/produtos', 'ProdutosController@produtos');
+
+Route::get('/produto/{id}', 'ProdutosController@produto'); //funciona
+Route::get('/produtos', 'ProdutosController@produtos');//funciona
+
+
+Route::get('/produtos/atualizar/{id}', 'ProdutosController@atualizar');
+Route::get('/produtos/atualizar/{id}', 'ProdutosController@atualizarProduto');
+
+Route::get('/produtos/excluir/{id}', 'ProdutosController@excluir');
+Route::delete('/produtos/excluir/{id}', 'ProdutosController@excluirProduto');
+
+
 
 Auth::routes();
 

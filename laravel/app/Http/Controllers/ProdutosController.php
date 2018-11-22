@@ -7,11 +7,15 @@ use App\Produto;
 
 class ProdutosController extends Controller
 {
+    public function listaProduto(){
+      $produtos = Produto:all();
+      return view('listaProduto')->with('listaProduto', $produtos);
+    }
     public function novo(){
-      return view('produtos');
+      return view('novoProduto');
     }
 
-    public function adicionar(Request $request){
+    public function adicionarProduto(Request $request){
 
         $produtos = Produto::create([
         'cor'=>$request->input('cor'),
@@ -33,7 +37,7 @@ class ProdutosController extends Controller
         'fk_categoria_id'=>$request->input('fk_categoria_id')
       ]);
       $produtos->save();
-      return redirect('produtos');
+      return redirect('/produtos');
     }
     // CRUD (Create) é executar um INSERT.
 
@@ -88,14 +92,14 @@ class ProdutosController extends Controller
 
     public function excluir($id){
       $produto = Produto::find($id);
-      return view('produtos')->with('produtos',$produto);
+      return view('produtosExcluir')->with('produtos',$produto);
     }
 
-    public function excluirProduto($id){
+    public function excluirProduto(Request $request,$id){
       $produto = Produto::find($id);
       $produto->delete();
 
-      return redirect('produtos');
+      return redirect('/produtos');
     }
     // CRUD (Delete) - é executar um DELETE.
 }

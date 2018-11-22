@@ -25,6 +25,7 @@
           <strong>{{ $errors->first('password') }}</strong>
       </span>
   @endif
+  
   <label> <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}> Lembrar usuario</label> <br><br>
   <button type="submit" class="btn btn-primary">
       {{ __('Login') }}

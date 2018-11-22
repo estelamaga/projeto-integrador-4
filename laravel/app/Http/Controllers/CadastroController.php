@@ -13,9 +13,9 @@ class CadastroController extends Controller
 
     public function cadastroPessoaFisica(Request $request){
 
-      //$validator = Validator::make([
-      //  'email' => 'required|string|email|max:255|unique:users'
-      //])
+      $validator = Validator::make([
+       'email' => 'required|string|email|max:255|unique:users'
+      ])
 
       // $this->validate($request,[
       //   'email'=> 'required|unique:users,email',
