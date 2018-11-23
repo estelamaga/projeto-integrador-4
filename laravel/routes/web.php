@@ -22,7 +22,6 @@ Route::get('/comingsoon', 'ComingsoonController@comingsoon');
 Route::get('/contato', 'ContatoController@contato');
 Route::get('/esqueciminhasenha', 'EsqueciMinhaSenhaController@esqueciminhasenha');
 Route::get('/faq', 'FaqController@faq');
-//Route::get('/home', 'HomeController@index');
 Route::get('/logados', 'LogadosController@logados');
 Route::get('/login', 'LoginController@login');
 

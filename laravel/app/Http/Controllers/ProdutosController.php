@@ -9,7 +9,7 @@ class ProdutosController extends Controller
 {
     public function listaProduto(){
       $produtos = Produto::all();
-      
+
       return view('produtos')->with('listaProduto', $produtos);
     }
 
@@ -18,6 +18,26 @@ class ProdutosController extends Controller
     }
 
     public function adicionarProduto(Request $request){
+
+      $request->validate([
+        'cor'=> 'required',
+        'tamanho'=>'required',
+        'SKU'=> 'required',
+        'EAN'=>'required',
+        'preco'=> 'required',
+        'estoque'=> 'required',
+        'nome'=> 'required',
+        'descricao'=> 'required',
+        'peso'=> 'required',
+        'largura'=> 'required',
+        'altura'=> 'required',
+        'comprimento'=> 'required',
+        'data_validade'=> 'required',
+        'lote_num'=> 'required',
+        'tipo_de_produto'=> 'required',
+        'fornecedor'=>'required',
+        'fk_categoria_id'=>'required'
+      ]);
 
         $produtos = Produto::create([
         'cor'=>$request->input('cor'),
@@ -88,13 +108,21 @@ class ProdutosController extends Controller
 
       $produto = Produto::find($id);
       $produto->cor = $request->input('cor');
+      $produto->tamanho = $request->input('tamanho');
+      $produto->SKU = $request->input('SKU');
+      $produto->EAN = $request->input('EAN');
+      $produto->preco = $request->input('preco');
+      $produto->estoque = $request->input('estoque');
+      $produto->nome = $request->input('nome');
+
+      // CRUD (Update) - é executar uma ATUALIZAÇÃO.
 
     }
 
 
     public function excluir($id){
       $produto = Produto::find($id);
-      return view('produtosExcluir')->with('produtos',$produto);
+      return view('produtosExcluir')->with('produtos', $produto);
     }
 
     public function excluirProduto(Request $request,$id){
