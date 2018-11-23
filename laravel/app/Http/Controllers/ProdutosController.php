@@ -10,11 +10,11 @@ class ProdutosController extends Controller
     public function listaProduto(){
       $produtos = Produto::all();
 
-      return view('produtos')->with('listaProduto', $produtos);
+      return view('adicionarProduto')->with('listaProduto', $produtos);
     }
 
     public function novo(){
-      return view('novoProduto');
+      return view('adicionarProduto');
     }
 
     public function adicionarProduto(Request $request){
@@ -82,7 +82,7 @@ class ProdutosController extends Controller
 
     public function atualizar($id){
       $produto = Produto::find($id);
-      return view('produtos')->with('produtos', $produto);
+      return view('atualizarProduto')->with('produtos', $produto);
     }
 
     public function atualizarProduto(Request $request, $id){
@@ -114,6 +114,12 @@ class ProdutosController extends Controller
       $produto->preco = $request->input('preco');
       $produto->estoque = $request->input('estoque');
       $produto->nome = $request->input('nome');
+      $produto->descricao = $request->input('descricao');
+      $produto->peso = $request->input('peso');
+      $produto->largura = $request->input('largura');
+      $produto->comprimento = $request->input('comprimento');
+      $produto->data_validade = $request->input('data_validade');
+      $produto->lote_num = $request->input('lote_num');
 
       // CRUD (Update) - é executar uma ATUALIZAÇÃO.
 
@@ -122,7 +128,7 @@ class ProdutosController extends Controller
 
     public function excluir($id){
       $produto = Produto::find($id);
-      return view('produtosExcluir')->with('produtos', $produto);
+      return view('excluirProduto')->with('produtos', $produto);
     }
 
     public function excluirProduto(Request $request,$id){

@@ -13,16 +13,20 @@ class CadastroController extends Controller
 
     public function cadastroPessoaFisica(Request $request){
 
-      $validator = Validator::make([
-       'email' => 'required|string|email|max:255|unique:users'
-      ])
 
-      // $this->validate($request,[
-      //   'email'=> 'required|unique:users,email',
-      //   'password'=> 'required',
-      //   'username'=> 'required'
-      //
+      //   $request->validate([
+      //   'email' => 'unique',
+      //   'cpf' => 'unique',
+      //   'password' => 'required',
+      //   'username' => 'required',
+      //   'name' =>  'required',
+      //   'sobrenome' => 'required',
+      //   'data_de_nascimento' => 'required',
+      //   'telefone' => 'required',
+      //   'sexo' => 'required'
       // ]);
+
+
 
       $usuario = User::create([
         'email' => $request->input('email'),
@@ -45,9 +49,24 @@ class CadastroController extends Controller
       $pf->save();
 
       return redirect('/login');
+
+
     }
 
     public function cadastroPessoaJuridica(Request $request){
+
+      // $validator = $request->validate([
+      //   'email' => 'required|unique:users',
+      //   'cnpj_pj' => 'unique',
+      //   'password' => 'required',
+      //   'username' => 'required',
+      //   'nome_fantasia' =>  'required',
+      //   'sobrenome' => 'required',
+      //   'data_de_nascimento' => 'required',
+      //   'telefone' => 'required',
+      //   'sexo' => 'required'
+      // ]);
+      //
 
       $usuario = User::create([
         'email' => $request->input('email'),

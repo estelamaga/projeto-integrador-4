@@ -1,36 +1,35 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
 
+        @if ($errors->count())
+        <div class="alert alert-danger">
+          <ul>
+            @foreach ($errors->all() as $error)
+            <li> {{$error}}</li>
+            @endforeach
+          </ul>
+        </div>
+        @endif
 
-<h1> Adicionar Produtos </h1>
-<form method="post">
-  @csrf
+    <h1>Adicionar Categoria</h1>
 
-  {{method_field('POST')}}
-  <label for="">Cor </label><br>
-  <input type="text" name="or" value=""><br><br>
+      <div class="container">
 
-  <label for="">Autor</label><br>
-  <input type="text" name="Autor" value=""><br><br>
+      <form action="/categoria/adicionar" method="POST">
 
-  <label for="">Preco</label><br>
-  <input type="text" name="Preco" value=""><br><br>
+        {{ csrf_field() }}
 
-  <label for="">QtdEstoque</label><br>
-  <input type="text" name="QtdEstoque" value=""><br><br>
+          <label>Nome da Categoria</label>
+          <input type="text" name="nome">
 
-  <label for="">Edicao</label><br>
-  <input type="text" name="Edicao" value=""><br><br>
-
-  <label for="">Ativo</label><br>
-  <input type="text" name="Ativo" value=""><br><br>
-
-  <label for="">EditoraId</label><br>
-  <input type="text" name="EditoraId" value=""><br><br>
-
-  <label for="">CategoriaId</label><br>
-  <input type="text" name="CategoriaId" value=""><br><br>
-
-  <input type="submit" name="" value="Enviar">
-</form>
-
-</div>
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
+  </body>
+</html>

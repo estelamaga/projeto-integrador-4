@@ -7,6 +7,15 @@
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12"><!-- Container Geral -->
       <div class="col-xs-12">
+        <!-- @if($errors->any())
+        <div class="alert alert-danger" role="alert">
+          <ul>
+            @foreach ($errors->all() as $erro)
+            <li>{{$erro}}</li>
+            @endforeach
+          </ul>
+        </div>
+        @endif -->
         <h1>Cadastro</h1>
       </div>
       <div class="col-xs-12">
@@ -165,17 +174,6 @@
               </div>
 
               <div class="col-md-12">
-
-                @if (count($errors) > 0)
-                  <div class="alert alert-danger">
-                    <ul>
-                      @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                      @endforeach
-                    </ul>
-                  </div>
-                @endif
-
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">
                   <button type="button" onclick="validarFormulario(document.forms['pessoa_juridica'])" name="button" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;">Cadastrar</button>

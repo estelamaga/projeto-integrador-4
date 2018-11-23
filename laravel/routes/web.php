@@ -26,12 +26,12 @@ Route::get('/logados', 'LogadosController@logados');
 Route::get('/login', 'LoginController@login');
 
 
-Route::get('/produto', 'ProdutosController@listaProduto');
-Route::get('/produto/adicionar', 'ProdutosController@novo');
-Route::post('/produto/adicionar', 'ProdutosController@AdicionarProduto');
+Route::get('/produtos', 'ProdutosController@listaProduto');
+Route::get('/produtos/adicionar', 'ProdutosController@novo');
+Route::post('/produtos/adicionar', 'ProdutosController@AdicionarProduto');
 
 
-Route::get('/produto/{id}', 'ProdutosController@produto'); //funciona
+Route::get('/produtos/{id}', 'ProdutosController@produto'); //funciona
 Route::get('/produtos', 'ProdutosController@produtos');//funciona
 
 
