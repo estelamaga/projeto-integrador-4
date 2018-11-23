@@ -112,7 +112,7 @@
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">
-                  <button type="button" onclick="validarFormulario(document.forms['pessoa_fisica'])" name="button" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;">Cadastrar</button>
+                  <button id="botaocad1" type="button" onclick="validarFormulario(document.forms['pessoa_fisica'])" name="button" class="btn btn-success btn-lg btn-block">Cadastrar</button>
                 </div>
               </div><!-- Fim Button -->
 
@@ -176,7 +176,7 @@
               <div class="col-md-12">
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">
-                  <button type="button" onclick="validarFormulario(document.forms['pessoa_juridica'])" name="button" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;">Cadastrar</button>
+                  <button id="botaocad2" type="button" onclick="validarFormulario(document.forms['pessoa_juridica'])" name="button" class="btn btn-success btn-lg btn-block">Cadastrar</button>
                 </div>
               </div><!-- Fim Button -->
 
