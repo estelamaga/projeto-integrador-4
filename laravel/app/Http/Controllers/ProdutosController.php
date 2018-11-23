@@ -8,9 +8,11 @@ use App\Produto;
 class ProdutosController extends Controller
 {
     public function listaProduto(){
-      $produtos = Produto:all();
-      return view('listaProduto')->with('listaProduto', $produtos);
+      $produtos = Produto::all();
+      
+      return view('produtos')->with('listaProduto', $produtos);
     }
+
     public function novo(){
       return view('novoProduto');
     }
