@@ -110,9 +110,9 @@
                 </div>
               </div>
 
-              <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
+              <div class="col-lg-5 col-md-12 col-sm-12 text-center"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">
-                  <button id="botaocad1" type="button" onclick="validarFormulario(document.forms['pessoa_fisica'])" name="button" class="btn btn-success btn-lg btn-block">Cadastrar</button>
+                  <button id="botaocad1" type="button" onclick="validarFormulario(document.forms['pessoa_fisica'])" name="button" class="btn btn-success">Cadastrar</button>
                 </div>
               </div><!-- Fim Button -->
 
@@ -173,12 +173,10 @@
                 </div>
               </div>
 
-              <div class="col-md-12">
-              <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
-                <div class="col-lg-2 col-md-6 col-sm-3">
-                  <button id="botaocad2" type="button" onclick="validarFormulario(document.forms['pessoa_juridica'])" name="button" class="btn btn-success btn-lg btn-block">Cadastrar</button>
-                </div>
-              </div><!-- Fim Button -->
+              <div class="col-md-12 text-center">
+                <div class="col-lg-5 col-md-12 col-sm-12"><!-- Inicio Button -->
+                    <button id="botaocad2" type="button" onclick="validarFormulario(document.forms['pessoa_juridica'])" name="button" class="btn btn-success">Cadastrar</button>
+                </div><!-- Fim Button -->
 
             </form><!-- Fim Form -->
   				</div>
