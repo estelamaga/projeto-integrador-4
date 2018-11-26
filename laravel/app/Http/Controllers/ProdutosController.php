@@ -120,6 +120,9 @@ class ProdutosController extends Controller
       $produto->comprimento = $request->input('comprimento');
       $produto->data_validade = $request->input('data_validade');
       $produto->lote_num = $request->input('lote_num');
+      $produto->tipo_de_produto = $request->input('tipo_de_produto');
+      $produto->fornecedor = $request->input('fornecedor');
+      $produto->fk_categoria_id = $request->input('fk_categoria_id');
 
       // CRUD (Update) - é executar uma ATUALIZAÇÃO.
 

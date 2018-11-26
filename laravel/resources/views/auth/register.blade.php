@@ -7,16 +7,8 @@
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12"><!-- Container Geral -->
       <div class="col-xs-12">
-        <!-- @if($errors->any())
-        <div class="alert alert-danger" role="alert">
-          <ul>
-            @foreach ($errors->all() as $erro)
-            <li>{{$erro}}</li>
-            @endforeach
-          </ul>
-        </div>
-        @endif -->
-        <h1>Cadastro</h1>
+
+          <h1>Cadastro</h1>
       </div>
       <div class="col-xs-12">
         <ul  class="nav nav-pills">
