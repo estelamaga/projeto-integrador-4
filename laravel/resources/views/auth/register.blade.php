@@ -110,20 +110,9 @@
                 </div>
               </div>
 
-
-              @if (count($errors) > 0)
-                <div class="alert alert-danger">
-                  <ul>
-                    @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                    @endforeach
-                  </ul>
-                </div>
-              @endif
-
-              <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
+              <div class="col-lg-5 col-md-12 col-sm-12 text-center"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">
-                  <button type="button" onclick="validarFormulario(document.forms['pessoa_fisica'])" name="button" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;">Cadastrar</button>
+                  <button id="botaocad1" type="button" onclick="validarFormulario(document.forms['pessoa_fisica'])" name="button" class="btn btn-success">Cadastrar</button>
                 </div>
               </div><!-- Fim Button -->
 
@@ -184,24 +173,10 @@
                 </div>
               </div>
 
-              <div class="col-xs-12">
-                @if (count($errors) > 0)
-                  <div class="alert alert-danger">
-                    <ul>
-                      @foreach ($errors->all() as $error)
-                      <li>{{ $error }}</li>
-                      @endforeach
-                    </ul>
-                  </div>
-                @endif
-              </div>
-
-              <div class="col-md-12">
-              <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
-                <div class="col-lg-2 col-md-6 col-sm-3">
-                  <button type="button" onclick="validarFormulario(document.forms['pessoa_juridica'])" name="button" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;">Cadastrar</button>
-                </div>
-              </div><!-- Fim Button -->
+              <div class="col-md-12 text-center">
+                <div class="col-lg-5 col-md-12 col-sm-12"><!-- Inicio Button -->
+                    <button id="botaocad2" type="button" onclick="validarFormulario(document.forms['pessoa_juridica'])" name="button" class="btn btn-success">Cadastrar</button>
+                </div><!-- Fim Button -->
 
             </form><!-- Fim Form -->
   				</div>
