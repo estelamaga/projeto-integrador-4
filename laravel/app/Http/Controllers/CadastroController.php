@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Validator;
 use App\User;
 use App\Pessoa_fisica;
 use App\Pessoa_juridica;
@@ -13,20 +14,11 @@ class CadastroController extends Controller
 
     public function cadastroPessoaFisica(Request $request){
 
-
-      //   $request->validate([
-      //   'email' => 'unique',
-      //   'cpf' => 'unique',
-      //   'password' => 'required',
-      //   'username' => 'required',
-      //   'name' =>  'required',
-      //   'sobrenome' => 'required',
-      //   'data_de_nascimento' => 'required',
-      //   'telefone' => 'required',
-      //   'sexo' => 'required'
-      // ]);
-
-
+      $request->validate([
+      'email' => 'required|unique:users, usuario_id',
+      'password' => 'required',
+      'username' => 'required',
+      ]);
 
       $usuario = User::create([
         'email' => $request->input('email'),
@@ -34,7 +26,14 @@ class CadastroController extends Controller
         'username'=> $request->input('username')
       ]);
 
+
+
       $usuario->save();
+
+      $request->validate([
+      'name' =>  'required',
+      'cpf' => 'require|unique:pessoa_fisica, id_pessoa_fisica',
+      ]);
 
       $pf = Pessoa_fisica::create([
         'name' => $request->input('name'),
@@ -46,6 +45,9 @@ class CadastroController extends Controller
         'users_usuario_id' => $usuario->usuario_id
       ]);
 
+
+
+
       $pf->save();
 
       return redirect('/login');
@@ -55,18 +57,12 @@ class CadastroController extends Controller
 
     public function cadastroPessoaJuridica(Request $request){
 
-      // $validator = $request->validate([
-      //   'email' => 'required|unique:users',
-      //   'cnpj_pj' => 'unique',
-      //   'password' => 'required',
-      //   'username' => 'required',
-      //   'nome_fantasia' =>  'required',
-      //   'sobrenome' => 'required',
-      //   'data_de_nascimento' => 'required',
-      //   'telefone' => 'required',
-      //   'sexo' => 'required'
-      // ]);
-      //
+
+      $request->validate([
+        'email' => 'required|unique:users,usuario_id',
+        'password' => 'required',
+        'username' => 'required',
+      ]);
 
       $usuario = User::create([
         'email' => $request->input('email'),
@@ -74,13 +70,20 @@ class CadastroController extends Controller
         'username'=> $request->input('username')
       ]);
 
+
       $usuario->save();
+
+      $request->validate([
+        'name' =>  'required',
+        'cnpj' => 'required|unique:pessoa_juridica, id_pessoa_juridica',
+      ]);
 
       $pj = Pessoa_juridica::create([
         'nome_fantasia' => $request->input('name'),
         'cnpj' => $request->input('cnpj'),
         'users_usuario_id' => $usuario->usuario_id
       ]);
+
 
       $pj->save();
 

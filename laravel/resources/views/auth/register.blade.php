@@ -110,6 +110,17 @@
                 </div>
               </div>
 
+
+              @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                  <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                  </ul>
+                </div>
+              @endif
+
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
                 <div class="col-lg-2 col-md-6 col-sm-3">
                   <button type="button" onclick="validarFormulario(document.forms['pessoa_fisica'])" name="button" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;">Cadastrar</button>
@@ -137,7 +148,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-12">
                   <label for="ex1">CNPJ*</label>
-                  <input type="text" class="form-control" id="cnpj_pj" maxlength="40"  name="cnpj" placeholder="Insira seu cnpj" required><br>
+                  <input type="text" class="form-control" id="cnpj" maxlength="40"  name="cnpj" placeholder="Insira seu cnpj" required><br>
                 </div>
             </div><!-- Fim Div -->
 
@@ -171,6 +182,18 @@
                   <label for="ex1">Faça upload da sua foto de perfil</label>
                   <input type="file" name="fotoPerfil"><br>
                 </div>
+              </div>
+
+              <div class="col-xs-12">
+                @if (count($errors) > 0)
+                  <div class="alert alert-danger">
+                    <ul>
+                      @foreach ($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
               </div>
 
               <div class="col-md-12">
