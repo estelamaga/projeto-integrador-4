@@ -3,6 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif !important;
     background-color: #ebefee;
+    font-size:17px;
 }
 
 /* Navbar Principal */
@@ -633,4 +634,23 @@ font-weight: 300;
 
 .mynav .dropdown-menu a{
   color: #fff;
+}
+/* fim estilo login */
+
+/* Inicio estilo about */
+img.food.img-circle{
+    margin-left: 50px;
+    margin-bottom:20px;
+}
+
+.sub{
+    margin-bottom:30px;
+}
+
+img.turtle.img-rounded{
+    margin-bottom:20px;
+}
+
+div.third.col-md-12 > h2.text-center{
+    margin-bottom:20px;
 }

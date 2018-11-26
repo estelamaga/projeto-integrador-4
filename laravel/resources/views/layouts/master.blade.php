@@ -190,7 +190,7 @@
               <h5>Sobre Nós</h5>
               <ul>
                 <li><a href="#">Trabalhe Conosco</a></li>
-                <li><a href="#">Avalie-nos</a></li>
+                <li><a href="/about">Nossa História</a></li>
               </ul>
             </div>
             <div class="col-sm-2">
