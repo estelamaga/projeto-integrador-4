@@ -13,7 +13,7 @@
                         <h4 class="text-center" style="margin-bottom:2px;">{{$produto->nome}}</h4>
                         <span>{{$produto->descricao}}</span>
                         <br>
-                        <a href="produto/{{$produto->produto_id}}" class="btn btn-info ver-mais">Ver mais</a>
+                        <a href="/produto/{{$produto->produto_id}}" class="btn btn-info ver-mais">Ver mais</a>
                     </div>
                 </div>
                 @endforeach

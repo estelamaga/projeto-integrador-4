@@ -14,11 +14,6 @@ class CadastroController extends Controller
 
     public function cadastroPessoaFisica(Request $request){
 
-      $request->validate([
-      'email' => 'required|unique:users,usuario_id',
-      'password' => 'required',
-      'username' => 'required',
-      ]);
 
       $usuario = User::create([
         'email' => $request->input('email'),
@@ -29,11 +24,6 @@ class CadastroController extends Controller
 
 
       $usuario->save();
-
-      $request->validate([
-      'name' =>  'required',
-      'cpf' => 'required|unique:pessoa_fisica,id_pessoa_fisica',
-      ]);
 
       $pf = Pessoa_fisica::create([
         'name' => $request->input('name'),
@@ -57,13 +47,6 @@ class CadastroController extends Controller
 
     public function cadastroPessoaJuridica(Request $request){
 
-
-      $request->validate([
-        'email' => 'required|unique:users,usuario_id',
-        'password' => 'required',
-        'username' => 'required',
-      ]);
-
       $usuario = User::create([
         'email' => $request->input('email'),
         'password' =>  $request->input('password'),
@@ -73,10 +56,6 @@ class CadastroController extends Controller
 
       $usuario->save();
 
-      $request->validate([
-        'name' =>  'required',
-        'cnpj' => 'required|unique:pessoa_juridica,id_pessoa_juridica',
-      ]);
 
       $pj = Pessoa_juridica::create([
         'nome_fantasia' => $request->input('name'),

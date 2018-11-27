@@ -4,40 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Produto;
+use App\Categorias;
 
 class ProdutosController extends Controller
 {
-    public function listaProduto(){
-      $produtos = Produto::all();
-
-      return view('adicionarProduto')->with('listaProduto', $produtos);
-    }
-
     public function novo(){
-      return view('adicionarProduto');
+      $categoria = Categorias::all();
+
+      return view('adicionarProduto')->with('listaDeCategorias' , $categoria);
     }
 
     public function adicionarProduto(Request $request){
-
-      $request->validate([
-        'cor'=> 'required',
-        'tamanho'=>'required',
-        'SKU'=> 'required',
-        'EAN'=>'required',
-        'preco'=> 'required',
-        'estoque'=> 'required',
-        'nome'=> 'required',
-        'descricao'=> 'required',
-        'peso'=> 'required',
-        'largura'=> 'required',
-        'altura'=> 'required',
-        'comprimento'=> 'required',
-        'data_validade'=> 'required',
-        'lote_num'=> 'required',
-        'tipo_de_produto'=> 'required',
-        'fornecedor'=>'required',
-        'fk_categoria_id'=>'required'
-      ]);
 
         $produtos = Produto::create([
         'cor'=>$request->input('cor'),
@@ -72,7 +49,7 @@ class ProdutosController extends Controller
     }
 
     public function produtos(){
-      $produtos = Produto::paginate(3);
+      $produtos = Produto::paginate(4);
 
       return view('produtos')->with('produtos', $produtos);
     }
@@ -82,29 +59,12 @@ class ProdutosController extends Controller
 
     public function atualizar($id){
       $produto = Produto::find($id);
-      return view('atualizarProduto')->with('produtos', $produto);
+      $categoria = Categorias::all();
+
+      return view('atualizarProduto')->with('produtos', $produto)->with('listaDeCategorias' , $categoria);
     }
 
     public function atualizarProduto(Request $request, $id){
-      $request->validate([
-        'cor'=> 'required',
-        'tamanho'=>'required',
-        'SKU'=> 'required',
-        'EAN'=>'required',
-        'preco'=> 'required',
-        'estoque'=> 'required',
-        'nome'=> 'required',
-        'descricao'=> 'required',
-        'peso'=> 'required',
-        'largura'=> 'required',
-        'altura'=> 'required',
-        'comprimento'=> 'required',
-        'data_validade'=> 'required',
-        'lote_num'=> 'required',
-        'tipo_de_produto'=> 'required',
-        'fornecedor'=>'required',
-        'fk_categoria_id'=>'required'
-      ]);
 
       $produto = Produto::find($id);
       $produto->cor = $request->input('cor');
@@ -123,6 +83,9 @@ class ProdutosController extends Controller
       $produto->tipo_de_produto = $request->input('tipo_de_produto');
       $produto->fornecedor = $request->input('fornecedor');
       $produto->fk_categoria_id = $request->input('fk_categoria_id');
+      $produto->save();
+
+      return redirect('/produtos');
 
       // CRUD (Update) - é executar uma ATUALIZAÇÃO.
 
@@ -131,13 +94,14 @@ class ProdutosController extends Controller
 
     public function excluir($id){
       $produto = Produto::find($id);
-      return view('excluirProduto')->with('produtos', $produto);
+      $categoria = Categorias::all();
+
+      return view('excluirProduto')->with('produtos', $produto)->with('listaDeCategorias' , $categoria);
     }
 
     public function excluirProduto(Request $request,$id){
       $produto = Produto::find($id);
       $produto->delete();
-
       return redirect('/produtos');
     }
     // CRUD (Delete) - é executar um DELETE.

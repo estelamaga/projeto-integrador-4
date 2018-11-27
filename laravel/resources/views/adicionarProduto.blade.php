@@ -1,85 +1,71 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Formulario</title>
-    <link
-    rel="stylesheet" href="/css/app.css">
-  </head>
-  <body>
+@extends('layouts.master')
+@section('content')
+  <div class="container">
+      <h1>Adicionar Produto</h1>
+        <form action="/produtos/adicionar" method="POST">
+            {{ csrf_field() }}
 
-        @if ($errors->count())
-        <div class="alert alert-danger">
-          <ul>
-            @foreach ($errors->all() as $error)
-            <li> {{$error}}</li>
-            @endforeach
-          </ul>
-        </div>
-        @endif
-
-    <h1>Adicionar Produto</h1>
-
-      <div class="container">
-
-      <form action="/produtos/adicionar" method="POST">
-
-        {{ csrf_field() }}
+             {{method_field('POST')}}
 
           <label>Cor</label>
-          <input type="text" name="cor">
+          <input class="form-control" type="text" name="cor">
 
           <label>Tamanho</label>
-          <input type="text" name="tamanho">
+          <input class="form-control" type="text" name="tamanho">
 
           <label>SKU</label>
-          <input type="text" name="SKU">
+          <input class="form-control" type="text" name="SKU">
 
           <label>EAN</label>
-          <input type="text" name="EAN"><br><br>
+          <input class="form-control" type="text" name="EAN"><br><br>
 
           <label>Preço</label>
-          <input type="text" name="preco">
+          <input class="form-control" type="text" name="preco">
 
           <label>Estoque</label>
-          <input type="text" name="estoque">
+          <input class="form-control" type="text" name="estoque">
 
           <label>Nome</label>
-          <input type="text" name="nome">
+          <input class="form-control" type="text" name="nome">
 
           <label>Descrição</label>
-          <input type="text" name="descricao"><br><br>
+          <input class="form-control" type="text" name="descricao"><br><br>
 
           <label>Peso</label>
-          <input type="text" name="peso">
+          <input class="form-control" type="text" name="peso">
 
           <label>Largura</label>
-          <input type="text" name="largura">
+          <input class="form-control" type="text" name="largura">
 
           <label>Altura</label>
-          <input type="text" name="altura">
+          <input class="form-control" type="text" name="altura">
 
           <label>Comprimento</label>
-          <input type="text" name="comprimento"><br><br>
+          <input class="form-control" type="text" name="comprimento"><br><br>
 
           <label>Data Validade</label>
-          <input type="text" name="data_validade">
+          <input class="form-control" type="text" name="data_validade">
 
           <label>Lote Numero</label>
-          <input type="text" name="lote_num">
+          <input class="form-control" type="text" name="lote_num">
 
           <label>Tipo de Produto</label>
-          <input type="text" name="tipo_de_produto">
+          <input class="form-control" type="text" name="tipo_de_produto">
 
           <label>Fornecedor</label>
-          <input type="text" name="fornecedor"><br><br>
+          <input class="form-control" type="text" name="fornecedor"><br><br>
 
-          <label>Fk categoria_id</label>
-          <input type="text" name="fk_categoria_id"><br><br>
+          <label for="">Categoria</label>
+          <select name="fk_categoria_id" class="form-control">
+            <option disabled selected> Selecione</option>
+            @foreach($listaDeCategorias as $categoria)
+            <option value ="{{$categoria->categoria_id}}">{{$categoria->nome}}</option>
+            @endforeach
+
+          </select>
 
 
-          <button type="submit">Enviar</button>
+          <button class="btn btn-primary" type="submit">Enviar</button>
         </form>
     </div>
-  </body>
-</html>
+@stop

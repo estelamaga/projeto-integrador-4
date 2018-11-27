@@ -26,20 +26,19 @@ Route::get('/logados', 'LogadosController@logados');
 Route::get('/login', 'LoginController@login');
 
 
-Route::get('/produtos', 'ProdutosController@listaProduto');
-Route::get('/produtos/adicionar', 'ProdutosController@novo');
-Route::post('/produtos/adicionar', 'ProdutosController@AdicionarProduto');
+Route::get('/produtos/adicionar', 'ProdutosController@novo'); // create --funciona
+Route::post('/produtos/adicionar', 'ProdutosController@AdicionarProduto'); // create post --funciona
 
 
 Route::get('/produtos/{id}', 'ProdutosController@produto'); //funciona
 Route::get('/produtos', 'ProdutosController@produtos');//funciona
 
 
-Route::get('/produtos/atualizar/{id}', 'ProdutosController@atualizar');
-Route::get('/produtos/atualizar/{id}', 'ProdutosController@atualizarProduto');
+Route::get('/produtos/atualizar/{id}', 'ProdutosController@atualizar');// funciona
+Route::put('/produtos/atualizar/{id}', 'ProdutosController@atualizarProduto');// funciona
 
-Route::get('/produtos/excluir/{id}', 'ProdutosController@excluir');
-Route::delete('/produtos/excluir/{id}', 'ProdutosController@excluirProduto');
+Route::get('/produtos/excluir/{id}', 'ProdutosController@excluir');//funciona
+Route::delete('/produtos/excluir/{id}', 'ProdutosController@excluirProduto');//funciona
 
 
 

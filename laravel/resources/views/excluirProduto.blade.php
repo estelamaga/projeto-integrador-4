@@ -1,83 +1,73 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Excluir Produto</title>
-    <link rel="stylesheet" href="/css/app.css">
-  </head>
-  <body>
-
+@extends('layouts.master')
+@section('content')
+  <div class="container">
         <h1>Excluir Produto</h1>
 
-      <div class="container">
-
-      <form action="/produtos/excluir/{{$produto->id}}" method="POST">
-
-        <!-- Este é um comentário -->
-        <!--@csrf-->
-        <!--@method('PUT')-->
-
+      <form action="/produtos/excluir/{{$produtos->produto_id}}" method="post">
 
         {{ csrf_field() }}
         {{method_field('DELETE')}}
 
-          <label>Nome da Categoria</label>
-          <input type="text" name="nome" value="{{$categoria->nome}}" readonly>
 
           <label>Cor</label>
-          <input type="text" name="cor">
+          <input class="form-control" type="text" name="cor" value='{{ $produtos->cor }}' readonly>
 
           <label>Tamanho</label>
-          <input type="text" name="tamanho">
+          <input class="form-control" type="text" name="tamanho" value='{{ $produtos->tamamnho}}' readonly>
 
           <label>SKU</label>
-          <input type="text" name="SKU">
+          <input class="form-control" type="text" name="SKU" value='{{ $produtos->SKU}}' readonly>
 
           <label>EAN</label>
-          <input type="text" name="EAN"><br><br>
+          <input class="form-control" type="text" name="EAN"value='{{ $produtos->EAN}}' readonly><br><br>
 
           <label>Preço</label>
-          <input type="text" name="preco">
+          <input class="form-control" type="text" name="preco" value='{{ $produtos->preco}}' readonly>
 
           <label>Estoque</label>
-          <input type="text" name="estoque">
+          <input class="form-control" type="text" name="estoque" value='{{ $produtos->estoque}}' readonly>
 
           <label>Nome</label>
-          <input type="text" name="nome">
+          <input class="form-control" type="text" name="nome" value='{{ $produtos->nome}}' readonly>
 
           <label>Descrição</label>
-          <input type="text" name="descricao"><br><br>
+          <input class="form-control" type="text" name="descricao" value='{{ $produtos->descricao}}' readonly><br><br>
 
           <label>Peso</label>
-          <input type="text" name="peso">
+          <input class="form-control" type="text" name="peso" value='{{ $produtos->peso}}' readonly>
 
           <label>Largura</label>
-          <input type="text" name="largura">
+          <input class="form-control" type="text" name="largura" value='{{ $produtos->largura}}' readonly>
 
           <label>Altura</label>
-          <input type="text" name="altura">
+          <input class="form-control" type="text" name="altura" value='{{ $produtos->altura}}' readonly>
 
           <label>Comprimento</label>
-          <input type="text" name="comprimento"><br><br>
+          <input class="form-control" type="text" name="comprimento" value='{{ $produtos->comprimento}}' readonly><br><br>
 
           <label>Data Validade</label>
-          <input type="text" name="data_validade">
+          <input class="form-control" type="text" name="data_validade" value='{{ $produtos->data_validade}}' readonly>
 
           <label>Lote Numero</label>
-          <input type="text" name="lote_num">
+          <input class="form-control" type="text" name="lote_num" value='{{ $produtos->lote_num}}' readonly>
 
           <label>Tipo de Produto</label>
-          <input type="text" name="tipo_de_produto">
+          <input class="form-control" type="text" name="tipo_de_produto" value='{{ $produtos->tipo_de_produto}}' readonly>
 
           <label>Fornecedor</label>
-          <input type="text" name="fornecedor"><br><br>
+          <input class="form-control" type="text" name="fornecedor" value='{{ $produtos->fornecedor}}' readonly><br><br>
 
-          <label>Fk categoria_id</label>
-          <input type="text" name="fk_categoria_id"><br><br>
+          <label for="">Categoria</label>
+          <select name="fk_categoria_id" class="form-control">
+            <option disabled selected> Selecione</option>
+            @foreach($listaDeCategorias as $categoria)
+            <option value ="{{$categoria->categoria_id}}">{{$categoria->nome}}</option>
+            @endforeach
+
+          </select>
 
 
-          <button type="submit">Excluir</button>
+          <button class="btn btn-primary" type="submit">Excluir</button>
         </form>
-    </div>
-  </body>
-</html>
+        </div>
+@stop

@@ -11,5 +11,6 @@ class Produto extends Model
     protected $fillable = ['cor','tamanho','SKU','EAN','preco','estoque','nome','descricao',
         'peso','largura','altura','comprimento','data_validade','lote_num','tipo_de_produto',
         'fornecedor','fk_categoria_id'];
+    public $timestamps = false;
 
 }

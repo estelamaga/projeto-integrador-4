@@ -1,87 +1,71 @@
-<html>
-  <head>
-    <meta>
-    <title>Atualizar Produto</title>
-    <link rel="stylesheet" href="/css/app.css">
-  </head>
-  <body>
+@extends('layouts.master')
+@section('content')
+  <div class="container">
+      <h1>Atualizar Produto</h1>
+        <form action="/produtos/atualizar/{{ $produtos->produto_id }}" method="POST">
 
-<div class="container">
+            {{ csrf_field() }}
+            {{method_field('PUT')}}
 
-    @if ($errors->count())
-    <ul>@foreach ($errors->all() as $error)
-      <li>{{ $error}}</li>
-      @endforeach
-    </ul>
-      @endif
-    <h1>Atualizar Produto</h1>
+          <label>Cor</label>
+          <input class="form-control" type="text" name="cor" value='{{ $produtos->cor }}'>
 
-    <form action="/produtos/atualizar/{{ $produto->produto_id }}" method="POST">
+          <label>Tamanho</label>
+          <input class="form-control" type="text" name="tamanho">
 
-      <!-- Este é um comentário -->
-      <!--@csrf-->
-      <!--@method('PUT')-->
+          <label>SKU</label>
+          <input class="form-control" type="text" name="SKU">
 
-      {{ csrf_field() }}
-      {{ method_field('PUT') }}
+          <label>EAN</label>
+          <input class="form-control" type="text" name="EAN"><br><br>
 
-      <label>Cor</label>
-      <input type="text" name="cor" value = '{{ $produto->cor}}'>
+          <label>Preço</label>
+          <input class="form-control" type="text" name="preco">
 
-      <label>Tamanho</label>
-      <input type="text" name="tamanho">
+          <label>Estoque</label>
+          <input class="form-control" type="text" name="estoque">
 
-      <label>SKU</label>
-      <input type="text" name="SKU">
+          <label>Nome</label>
+          <input class="form-control" type="text" name="nome" value="{{ $produtos->nome }}">
 
-      <label>EAN</label>
-      <input type="text" name="EAN"><br><br>
+          <label>Descrição</label>
+          <input class="form-control" type="text" name="descricao"><br><br>
 
-      <label>Preço</label>
-      <input type="text" name="preco">
+          <label>Peso</label>
+          <input class="form-control" type="text" name="peso">
 
-      <label>Estoque</label>
-      <input type="text" name="estoque">
+          <label>Largura</label>
+          <input class="form-control" type="text" name="largura">
 
-      <label>Nome</label>
-      <input type="text" name="nome">
+          <label>Altura</label>
+          <input class="form-control" type="text" name="altura">
 
-      <label>Descrição</label>
-      <input type="text" name="descricao"><br><br>
+          <label>Comprimento</label>
+          <input class="form-control" type="text" name="comprimento"><br><br>
 
-      <label>Peso</label>
-      <input type="text" name="peso">
+          <label>Data Validade</label>
+          <input class="form-control" type="text" name="data_validade">
 
-      <label>Largura</label>
-      <input type="text" name="largura">
+          <label>Lote Numero</label>
+          <input class="form-control" type="text" name="lote_num">
 
-      <label>Altura</label>
-      <input type="text" name="altura">
+          <label>Tipo de Produto</label>
+          <input class="form-control" type="text" name="tipo_de_produto">
 
-      <label>Comprimento</label>
-      <input type="text" name="comprimento"><br><br>
+          <label>Fornecedor</label>
+          <input class="form-control" type="text" name="fornecedor"><br><br>
 
-      <label>Data Validade</label>
-      <input type="text" name="data_validade">
+          <label for="">Categoria</label>
+          <select name="fk_categoria_id" class="form-control" required>
+            <option disabled selected> Selecione</option>
+            @foreach($listaDeCategorias as $categoria)
+            <option value ="{{$categoria->categoria_id}}">{{$categoria->nome}}</option>
+            @endforeach
 
-      <label>Lote Numero</label>
-      <input type="text" name="lote_num">
-
-      <label>Tipo de Produto</label>
-      <input type="text" name="tipo_de_produto">
-
-      <label>Fornecedor</label>
-      <input type="text" name="fornecedor"><br><br>
-
-      <label>Fk categoria_id</label>
-      <input type="text" name="fk_categoria_id"><br><br>
+          </select>
 
 
-      <button type="submit">Alterar</button>
-
-    </form>
-
-  </div>
-
-  </body>
-</html>
+          <button class="btn btn-primary" type="submit">Alterar</button>
+        </form>
+    </div>
+@stop
