@@ -177,6 +177,10 @@
           <div class="row">
             <div class="col-sm-3">
               <a href="#"><img src="/images/logoalgosust.png"></a>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" id="tema-normal">tema normal</button>
+                <button type="button" class="btn btn-default" id="tema-dark">tema dark</button>
+              </div>
             </div>
             <div class="col-sm-2">
               <h5>Início</h5>
@@ -219,6 +223,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-        
+        <script src="/js/main.js"></script>
+
       </body>
     </html>

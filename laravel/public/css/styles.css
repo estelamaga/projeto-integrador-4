@@ -6,6 +6,15 @@ body {
     font-size:17px;
 }
 
+body.tema-dark{
+  background-color: #555;
+  color: #fff;
+}
+
+body.tema-dark #nav2{
+  background-color: #555;
+  color: #fff;
+}
 /* Navbar Principal */
 .mynav .navbar-brand {
     height: 80px;

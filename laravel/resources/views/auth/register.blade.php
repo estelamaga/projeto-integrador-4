@@ -57,6 +57,22 @@
                 </div>
               </div><!-- Fim Div -->
 
+              <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                  <label for="estado">Estado*</label>
+                  <select type="text" class="form-control" id="estado_pf" maxlength="40"  name="estado" required>
+                  </select><br>
+                </div>
+            </div><!-- Fim Div -->
+
+            <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <label for="estado">Cidade*</label>
+                <select type="text" class="form-control" id="cidade_pf" maxlength="40"  name="cidade" required>
+                </select><br>
+              </div>
+          </div><!-- Fim Div -->
+
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-12">
@@ -132,6 +148,22 @@
                   <input type="text" class="form-control" id="cnpj" maxlength="40"  name="cnpj" placeholder="Insira seu cnpj" required><br>
                 </div>
             </div><!-- Fim Div -->
+
+            <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <label for="estado">Estado*</label>
+                <select type="text" class="form-control" id="estado_pj" maxlength="40"  name="estado" required>
+                </select><br>
+              </div>
+          </div><!-- Fim Div -->
+
+          <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+            <div class="col-lg-5 col-md-6 col-sm-12">
+              <label for="estado">Cidade*</label>
+              <select type="text" class="form-control" id="cidade_pj" maxlength="40"  name="cidade" required>
+              </select><br>
+            </div>
+        </div><!-- Fim Div -->
 
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-12">
