@@ -45,89 +45,22 @@
   <div class="container">
     <div class="row">
       <div class="destaques col-xs-12">
-        <h2 style="font-weight:300; padding-left:20px;"><i class="fab fa-hotjar"></i> Mais vendidos</h2>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="produto">
-            <img src="images/camiseta-branca.png" alt="">
-            <h3 class="text-center">Camiseta Branca</h3>
-            <!-- <p  class="text-center">Esta camiseta e branca</p> -->
-            <p class="preco text-center">R$10,00</p>
-            <button id="buy" class="btn btn-info" type="submit">Comprar</button>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="produto">
-            <img src="images/camiseta-branca.png" alt="">
-            <h3>Camiseta Branca</h3>
-            <!-- <p>Esta camiseta e branca</p> -->
-            <p class="preco">R$10,00</p>
-            <button id="buy" class="btn btn-info" type="submit">Comprar</button>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="produto">
-            <img src="images/camiseta-branca.png" alt="">
-            <h3>Camiseta Branca</h3>
-            <!-- <p>Esta camiseta e branca</p> -->
-            <p class="preco">R$10,00</p>
-            <button id="buy" class="btn btn-info" type="submit">Comprar</button>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="produto">
-            <img src="images/camiseta-branca.png" alt="">
-            <h3>Camiseta Branca</h3>
-            <!-- <p>Esta camiseta e branca</p> -->
-            <p class="preco">R$10,00</p>
-            <button id="buy" class="btn btn-info" type="submit">Comprar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="destaques col-xs-12">
         <h2 style="font-weight:300; padding-left:20px; "><i class="fa fa-plus"></i> Produtos novos</h2>
+        @foreach($produtos as $produto)
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="produto">
             <img src="images/camiseta-branca.png" alt="">
-            <h3>Camiseta Branca</h3>
+            <h3>{{$produto->nome}}</h3>
             <!-- <p>Esta camiseta e branca</p> -->
-            <p class="preco">R$10,00</p>
-            <button id="buy" class="btn btn-info" type="submit">Comprar</button>
+            <p class="preco">R${{$produto->preco}}</p>
+            <a id="buy" class="btn btn-info" href="/produtos/{{$produto->produto_id}}">Comprar</a>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="produto">
-            <img src="images/camiseta-branca.png" alt="">
-            <h3>Camiseta Branca</h3>
-            <!-- <p>Esta camiseta e branca</p> -->
-            <p class="preco">R$10,00</p>
-            <button id="buy" class="btn btn-info" type="submit">Comprar</button>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="produto">
-            <img src="images/camiseta-branca.png" alt="">
-            <h3>Camiseta Branca</h3>
-            <!-- <p>Esta camiseta e branca</p> -->
-            <p class="preco">R$10,00</p>
-            <button id="buy" class="btn btn-info" type="submit">Comprar</button>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="produto">
-            <img src="images/camiseta-branca.png" alt="">
-            <h3>Camiseta Branca</h3>
-            <!-- <p>Esta camiseta e branca</p> -->
-            <p class="preco">R$10,00</p>
-            <button id="buy" class="btn btn-info" type="submit">Comprar</button>
-          </div>
-        </div>
+        @endforeach
+
       </div>
     </div>
   </div>
 
+  <d
 @stop

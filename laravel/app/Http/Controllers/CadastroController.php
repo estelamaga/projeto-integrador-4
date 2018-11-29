@@ -14,14 +14,24 @@ class CadastroController extends Controller
 
     public function cadastroPessoaFisica(Request $request){
 
+      $arquivo = $request->file('fotoPerfil');
+      if (empty($arquivo)) {
+        abort(400, 'Nenhum arquivo foi enviado');
+      }
+      // salvando
+      $nomePasta = 'fotoUsuario';
+      $arquivo->storePublicly($nomePasta);
+      $caminho = public_path()."\\storage\\$nomePasta";
+      $nomeArquivo = $arquivo->getClientOriginalName();
+     // movendo
+      $arquivo->move($caminho, $nomeArquivo);
 
       $usuario = User::create([
         'email' => $request->input('email'),
         'password' =>  $request->input('password'),
-        'username'=> $request->input('username')
+        'username'=> $request->input('username'),
+        'fotoUrl'=> "storage/$nomePasta/$nomeArquivo"
       ]);
-
-
 
       $usuario->save();
 
@@ -47,10 +57,24 @@ class CadastroController extends Controller
 
     public function cadastroPessoaJuridica(Request $request){
 
+      $arquivo = $request->file('fotoPerfil');
+      if (empty($arquivo)) {
+        abort(400, 'Nenhum arquivo foi enviado');
+      }
+      // salvando
+      $nomePasta = 'fotoUsuario';
+      $arquivo->storePublicly($nomePasta);
+      $caminho = public_path()."\\storage\\$nomePasta";
+      $nomeArquivo = $arquivo->getClientOriginalName();
+     // movendo
+      $arquivo->move($caminho, $nomeArquivo);
+
+
       $usuario = User::create([
         'email' => $request->input('email'),
         'password' =>  $request->input('password'),
-        'username'=> $request->input('username')
+        'username'=> $request->input('username'),
+        'fotoUrl'=> "storage/$nomePasta/$nomeArquivo"
       ]);
 
 

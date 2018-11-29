@@ -6,21 +6,20 @@
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
-
 						<div class="preview-pic tab-content">
-						  <div class="tab-pane active" id="pic-1"><img src="/images/palmeiras1.png" /></div>
+						  <div class="tab-pane active" id="pic-1"><img src="/{{$produto->fotoUrl ? : 'storage/fotoProduto/noimage.jpg'}}" alt=""></div>
 						  <div class="tab-pane" id="pic-2"><img src="/images/palmeiras1.png" /></div>
 						  <div class="tab-pane" id="pic-3"><img src="/images/palmeiras1.png" /></div>
 						  <div class="tab-pane" id="pic-4"><img src="/images/palmeiras1.png" /></div>
 						  <div class="tab-pane" id="pic-5"><img src="/images/palmeiras1.png" /></div>
 						</div>
-						<ul class="preview-thumbnail nav nav-tabs">
-						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="/images/palmeiras1.png" /></a></li>
+						<!-- <ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="/{{$produto->fotoUrl ? : 'storage/fotoProduto/noimage.jpg'}}" alt=""></a></li>
 						  <li><a data-target="#pic-2" data-toggle="tab"><img src="/images/palmeiras1.png" /></a></li>
 						  <li><a data-target="#pic-3" data-toggle="tab"><img src="/images/palmeiras1.png" /></a></li>
 						  <li><a data-target="#pic-4" data-toggle="tab"><img src="/images/palmeiras1.png" /></a></li>
 						  <li><a data-target="#pic-5" data-toggle="tab"><img src="/images/palmeiras1.png" /></a></li>
-						</ul>
+						</ul> -->
 
 					</div>
 					<div class="details col-md-6">
@@ -43,10 +42,7 @@
 							<span class="size" data-toggle="tooltip" title="medium">M</span>
 							<span class="size" data-toggle="tooltip" title="large">G</span>
 						</h5>
-						<h5 class="colors">Cor: {{$produto->cor}}
-							<span class="color green"></span>
-							<!-- <span class="color blue"></span> -->
-						</h5>
+						<h5 class="colors">Cor: {{$produto->cor}}	</h5>
 						<div class="action">
 							<button class="add-to-cart btn btn-default" type="button"><i class="fa fa-plus"></i>Carrinho</button>
 							<button class="like btn btn-default" type="button" id="fav"><span class="fa fa-heart"></span></button>

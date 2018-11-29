@@ -133,6 +133,7 @@ body {
     margin: 15px 0;
     /* border: 1px solid gray; */
     border-radius: 5%;
+    min-height: 375px;
     text-align: center;
 }
 

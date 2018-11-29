@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return redirect('/home');
 });
 
 Route::get('/about', 'AboutController@about');
@@ -30,7 +30,7 @@ Route::get('/produtos/adicionar', 'ProdutosController@novo'); // create --funcio
 Route::post('/produtos/adicionar', 'ProdutosController@AdicionarProduto'); // create post --funciona
 
 
-Route::get('/produtos/{id}', 'ProdutosController@produto'); //funciona
+Route::get('/produtos/exibir/{id}', 'ProdutosController@produto'); //funciona
 Route::get('/produtos', 'ProdutosController@produtos');//funciona
 
 
@@ -39,7 +39,6 @@ Route::put('/produtos/atualizar/{id}', 'ProdutosController@atualizarProduto');//
 
 Route::get('/produtos/excluir/{id}', 'ProdutosController@excluir');//funciona
 Route::delete('/produtos/excluir/{id}', 'ProdutosController@excluirProduto');//funciona
-
 
 
 Auth::routes();

@@ -10,7 +10,7 @@ class Produto extends Model
     protected $primaryKey = 'produto_id';
     protected $fillable = ['cor','tamanho','SKU','EAN','preco','estoque','nome','descricao',
         'peso','largura','altura','comprimento','data_validade','lote_num','tipo_de_produto',
-        'fornecedor','fk_categoria_id'];
+        'fornecedor','fotoUrl','fk_categoria_id'];
     public $timestamps = false;
 
 }
