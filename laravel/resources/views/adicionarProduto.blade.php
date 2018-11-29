@@ -13,6 +13,7 @@
 
                       <label>Descrição</label>
                       <input class="form-control" type="text" name="descricao"><br>
+
                       <label for="">Categoria</label>
                       <select name="fk_categoria_id" class="form-control" required>
                         <option disabled selected> Selecione</option>
@@ -36,7 +37,6 @@
           <div class="col-md-4">
             <label>Data Validade</label>
             <input class="form-control" type="date" name="data_validade"><br>
-
 
             <label>Peso</label>
             <input class="form-control" type="text" name="peso"><br>
@@ -73,11 +73,12 @@
             <input class="form-control" type="text" name="EAN"><br>
 
             <label>Foto do produto</label>
-            <input type="file" name="fotoUrl">
+            <input  class="form-control" type="file" name="fotoUrl"><br>
+
           </div>
 
-          <div class="col-xs-12 text-right">
-            <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+          <div class="col-md-4 pull-right text-center">
+            <button class="btn btn-primary btn-lg" type="submit">Enviar</button><br><br>
           </div>
 
         </form>
