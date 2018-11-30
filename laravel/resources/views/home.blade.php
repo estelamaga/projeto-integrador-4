@@ -49,7 +49,7 @@
         @foreach($produtos as $produto)
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="produto">
-            <img src="images/camiseta-branca.png" alt="">
+            <img src="images/camiseta-branca.png" alt="imagem de produtos novos">
             <h3>{{$produto->nome}}</h3>
             <!-- <p>Esta camiseta e branca</p> -->
             <p class="preco">R${{$produto->preco}}</p>
@@ -62,5 +62,5 @@
     </div>
   </div>
 
-  <d
+  <div>
 @stop

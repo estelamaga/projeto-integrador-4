@@ -9,7 +9,7 @@
               @foreach($produtos as $produto)
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="products">
-                        <img src="/{{$produto->fotoUrl ? : 'storage/fotoProduto/noimage.jpg'}}" alt="">
+                        <img src="/{{$produto->fotoUrl ? : 'storage/fotoProduto/noimage.jpg'}}" alt="imagem do produto">
                         <h4 class="text-center" style="margin-bottom:2px;">{{$produto->nome}}</h4>
                         <div class="stars">
           								<span class="fa fa-star checked"></span>

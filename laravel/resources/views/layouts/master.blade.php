@@ -186,7 +186,7 @@
               <h5>Início</h5>
               <ul>
                 <li><a href="/home">Home</a></li>
-                <li><a href="/cadastro">Cadastro</a></li>
+                <li><a href="/register">Cadastro</a></li>
                 <li><a href="/produtos">Produtos</a></li>
               </ul>
             </div>
