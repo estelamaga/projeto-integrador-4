@@ -8,7 +8,7 @@
             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                 data-parent="#faqAccordion" data-target="#question0">
                 <h4 class="panel-title">
-                    <a href="#" class="ing">P: Esta loja é confiável</a>
+                    <a href="#" class="ing">Esta loja é confiável</a>
                 </h4>
             </div>
             <div id="question0" class="panel-collapse collapse" style="height: 0px;">
@@ -24,7 +24,7 @@
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
                 data-parent="#faqAccordion" data-target="#question1">
                 <h4 class="panel-title">
-                    <a href="#" class="ing">P: Vocês possuem loja física?</a>
+                    <a href="#" class="ing">Vocês possuem loja física?</a>
                 </h4>
 
             </div>
@@ -40,7 +40,7 @@
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
                 data-parent="#faqAccordion" data-target="#question2">
                 <h4 class="panel-title">
-                    <a href="#" class="ing">P: Como faço um pedido na loja??</a>
+                    <a href="#" class="ing">Como faço um pedido na loja??</a>
                 </h4>
 
             </div>
@@ -57,7 +57,7 @@
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
                 data-parent="#faqAccordion" data-target="#question3">
                 <h4 class="panel-title">
-                    <a href="#" class="ing">P: Quanto tempo demora para entregar a compra?</a>
+                    <a href="#" class="ing">Quanto tempo demora para entregar a compra?</a>
                 </h4>
 
             </div>
@@ -74,7 +74,7 @@
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
                 data-parent="#faqAccordion" data-target="#question4">
                 <h4 class="panel-title">
-                    <a href="#" class="ing">P: Quais as opções de frete?</a>
+                    <a href="#" class="ing">Quais as opções de frete?</a>
                 </h4>
 
             </div>
@@ -93,7 +93,7 @@
             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                 data-parent="#faqAccordion2" data-target="#question5">
                 <h4 class="panel-title">
-                    <a href="#" class="ing">P: Se não gostei ou me arrependi do produto posso devolver</a>
+                    <a href="#" class="ing">Se não gostei ou me arrependi do produto posso devolver</a>
                 </h4>
             </div>
             <div id="question5" class="panel-collapse collapse" style="height: 0px;">
@@ -108,7 +108,7 @@
             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                 data-parent="#faqAccordion2" data-target="#question6">
                 <h4 class="panel-title">
-                    <a href="#" class="ing">P: Como faço para trocar um produto?</a>
+                    <a href="#" class="ing">Como faço para trocar um produto?</a>
                 </h4>
             </div>
             <div id="question6" class="panel-collapse collapse" style="height: 0px;">

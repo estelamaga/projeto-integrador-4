@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif !important;
-    background-color: #ebefee;
+    background-color: #fff;
     font-size:17px;
 }
 
@@ -14,6 +14,10 @@ body.tema-dark{
 body.tema-dark #nav2{
   background-color: #555;
   color: #fff;
+}
+
+.produto h3{
+  font-size: 20px;
 }
 /* Navbar Principal */
 .mynav .navbar-brand {
@@ -408,7 +412,6 @@ img {
 .card {
     margin-top: 50px;
     margin-bottom: 33px;
-    background: #eee;
     padding: 3em;
     line-height: 1.5em;
 }

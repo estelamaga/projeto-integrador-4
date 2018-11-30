@@ -53,7 +53,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-12">
                   <label for="ex1">CPF*</label>
-                  <input type="text" class="form-control" id="cpf_pf" maxlength="40"  name="cpf" placeholder="Ex: 123.456.789-12" required><br>
+                  <input type="text" max="15" class="form-control" id="cpf_pf" maxlength="40"  name="cpf" placeholder="Ex: 123.456.789-12" required><br>
                 </div>
               </div><!-- Fim Div -->
 
@@ -84,7 +84,13 @@
               <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
                 <div class="col-lg-5 col-md-6 col-sm-12">
                   <label for="ex1">Sexo</label>
-                  <input type="text" class="form-control" id="sexo_pf" maxlength="40"  name="sexo" placeholder="Insira seu sexo"><br>
+                  <select class="form-control" id="sexo_pf" maxlength="40"  name="sexo">
+                    <option selected disabled>Seleicone</option>
+                    <option value="F">Feminino</option>
+                    <option value="M">Masculino</option>
+                    <option value="NB">Não Binário</option>
+                    <option value="N/A">Prefiro não declarar</option>
+                  </select><br>
                 </div>
               </div><!-- Fim Div -->
 

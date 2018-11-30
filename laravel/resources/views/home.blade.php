@@ -49,11 +49,11 @@
         @foreach($produtos as $produto)
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="produto">
-            <img src="images/camiseta-branca.png" alt="imagem de produtos novos">
+            <img src="/{{$produto->fotoUrl ? : 'storage/fotoProduto/noimage.jpg'}}" alt="{{$produto->titulo}}">
             <h3>{{$produto->nome}}</h3>
             <!-- <p>Esta camiseta e branca</p> -->
             <p class="preco">R${{$produto->preco}}</p>
-            <a id="buy" class="btn btn-info" href="/produtos/{{$produto->produto_id}}">Comprar</a>
+            <a id="buy" class="btn btn-info" href="/produtos/exibir/{{$produto->produto_id}}">Comprar</a>
           </div>
         </div>
         @endforeach
