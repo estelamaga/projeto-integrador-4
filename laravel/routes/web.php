@@ -37,6 +37,8 @@ Route::put('/produtos/atualizar/{id}', 'ProdutosController@atualizarProduto');//
 Route::get('/produtos/excluir/{id}', 'ProdutosController@excluir');//funciona
 Route::delete('/produtos/excluir/{id}', 'ProdutosController@excluirProduto');//funciona
 
+Route::get('/carrinho', 'CarrinhoController@carrinho');
+
 
 Auth::routes();
 
