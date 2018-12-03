@@ -74,7 +74,7 @@
                         </li>
                     @endguest
               <li class="hidden-xs">
-                <a href="#" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                <a href="/carrinho" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
               </li>
             </ul>
             <ul class="nav navbar-nav navbar visible-xs">
