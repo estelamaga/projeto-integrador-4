@@ -14,10 +14,10 @@
   @csrf
   <!--inicio do formulario  -->
   <label for="">Email:</label>
-  <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+  <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Ex:pedro@hotmail.com" required autofocus>
 
   <label for="">Senha:</label>
-  <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+  <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  placeholder="Digite sua senha"  required>
 
   @if ($errors->has('password'))
       <span class="invalid-feedback" role="alert">

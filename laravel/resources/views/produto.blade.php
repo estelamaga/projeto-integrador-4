@@ -36,7 +36,7 @@
 							<span class="review-no">41 avaliações</span>
 						</div>
 						<!-- <p class="product-description">{{$produto->descricao}}</p> -->
-						<h4 class="price">Preço atual: <span>R${{$produto->preco}}</span></h4>
+						<h4 class="price">Preço atual: <span>R$ {{$produto->preco}}</span></h4>
 						<p class="vote"><strong>91%</strong> de clientes aprovaram este produto <strong>(87 votos)</strong></p>
 						<h5 class="sizes">Tamanhos:
 							<span class="size" data-toggle="tooltip" title="small">P</span>
