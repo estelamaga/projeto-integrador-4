@@ -677,8 +677,6 @@ div.third.col-md-12 > h2.text-center{
 
 .quadradao{
     margin-top:80px;
-    border: 5px gray solid;
-    border-radius: 1%;
     margin-bottom:80px;
 }
 
@@ -696,7 +694,10 @@ margin-top:18px;
 .table>tbody>tr>td, .table>tfoot>tr>td{
     vertical-align: middle;
 }
-
+.actions:before{
+    content: none !important;
+    display: none;
+}
 @media screen and (max-width: 600px) {
     table#cart tbody td .form-control{
 		width:20%;
