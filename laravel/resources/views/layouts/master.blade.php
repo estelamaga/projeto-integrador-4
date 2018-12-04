@@ -10,7 +10,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="shortcut icon" type="image/png" href="/favicon/Imagem1.png"/>
-  <link href="/thumbnailSlider/3/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="/thumbnailSlider/3/thumbnail-slider.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
 
   <title>Eco Green</title>
 </head>
@@ -224,16 +225,14 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-        <script src="/js/main.js"></script>
         <!-- ZOOM JQUERY -->
         <script  type="text/javascript" src="/elevatezoom-master/jquery.js"></script>
         <script src="/elevatezoom-master/jquery.elevatezoom.js" type="text/javascript"></script>
-        <script type="text/javascript">
-          $("#zoom_01").elevateZoom();
-        </script>
 
         <!--Vertical Tumbnails  -->
-        <script src="/thumbnailSlider/3/thumbnail-slider.js" type="text/javascript"></script>
+        <!-- <script src="/thumbnailSlider/3/thumbnail-slider.js" type="text/javascript"></script> -->
+        <script src="/js/owl.carousel.min.js" charset="utf-8"></script>
+        <script src="/js/main.js"></script>
 
       </body>
     </html>
