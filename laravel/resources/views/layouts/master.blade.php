@@ -75,12 +75,7 @@
                         </li>
                     @endguest
               <li class="hidden-xs">
-<<<<<<< HEAD
-                <a href="#" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                </a>
-=======
                 <a href="/carrinho" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
->>>>>>> 793fb3c1795cd59396d99f9e05d5ab1415231eec
               </li>
             </ul>
             <ul class="nav navbar-nav navbar visible-xs">
