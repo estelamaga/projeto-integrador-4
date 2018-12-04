@@ -667,3 +667,87 @@ img.turtle.img-rounded{
 div.third.col-md-12 > h2.text-center{
     margin-bottom:20px;
 }
+
+
+
+
+
+/* Pagina de Carrinho */
+
+
+.quadradao{
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+a.btn.btn-warning{
+    margin-top:18px;
+}
+
+a.btn.btn-success.btn-block {
+margin-top:18px;
+}
+.total{
+    margin-top:18px;
+}
+
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+.actions:before{
+    content: none !important;
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+		width:20%;
+		display: inline !important;
+    }
+	.actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+
+	table#cart thead {
+    display: none;
+    }
+	table#cart tbody td {
+         display: block;
+         padding: .6rem;
+         min-width:320px;
+    }
+
+	table#cart tbody tr td:first-child {
+         background: #333;
+         color: #fff;
+    }
+
+	table#cart tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 40%;
+	}
+
+	table#cart tfoot td{
+        display:block;
+    }
+
+	table#cart tfoot td .btn{
+        display:block;
+    }
+
+}
+
+/* FIm da pagina de carrinho */
+
+.subir{
+  
+}

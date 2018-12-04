@@ -10,6 +10,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="shortcut icon" type="image/png" href="/favicon/Imagem1.png"/>
+  <link href="/thumbnailSlider/3/thumbnail-slider.css" rel="stylesheet" type="text/css" />
 
   <title>Eco Green</title>
 </head>
@@ -35,7 +36,7 @@
         <div class="col-md-5 col-sm-5 hidden-xs">
           <form class="search">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Procurar">
+              <input type="text" class="form-control" placeholder="O que deseja procurar?">
               <span class="input-group-btn">
                 <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
               </span>
@@ -74,7 +75,7 @@
                         </li>
                     @endguest
               <li class="hidden-xs">
-                <a href="#" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                <a href="/carrinho" class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
               </li>
             </ul>
             <ul class="nav navbar-nav navbar visible-xs">
@@ -224,6 +225,15 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
         <script src="/js/main.js"></script>
+        <!-- ZOOM JQUERY -->
+        <script  type="text/javascript" src="/elevatezoom-master/jquery.js"></script>
+        <script src="/elevatezoom-master/jquery.elevatezoom.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          $("#zoom_01").elevateZoom();
+        </script>
+
+        <!--Vertical Tumbnails  -->
+        <script src="/thumbnailSlider/3/thumbnail-slider.js" type="text/javascript"></script>
 
       </body>
     </html>
