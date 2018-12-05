@@ -229,8 +229,7 @@
         <script  type="text/javascript" src="/elevatezoom-master/jquery.js"></script>
         <script src="/elevatezoom-master/jquery.elevatezoom.js" type="text/javascript"></script>
 
-        <!--Vertical Tumbnails  -->
-        <!-- <script src="/thumbnailSlider/3/thumbnail-slider.js" type="text/javascript"></script> -->
+        <!-- Tumbnails Vertical -->
         <script src="/js/owl.carousel.min.js" charset="utf-8"></script>
         <script src="/js/main.js"></script>
 

@@ -6,6 +6,7 @@
 		<h1 class="text-center">Sobre a Algosust</h1>
 
 		<div class="col-md-12">
+			<center>
 			<h2 class="text-center">Nossa História</h2><br>
 
 			<div class="col-md-12 text-justify">
@@ -17,7 +18,7 @@
 		<div class="col-md-12">
 			<h2 class="text-center">Nossa missāo com você</h2><br>
 			<div class="col-md-12">
-				<img class="food img-circle" src="images/healthy.jpg" alt="Mesa de madeira de cor marrom escuro e sobre essa mesa existe um recipiente
+				<img class="food img-circle" src="images/cotton-img.jpg" alt="Mesa de madeira de cor marrom escuro e sobre essa mesa existe um recipiente
 				 em formato de coração com vegetais, frutas e grãos. Ao lado desse recepiente existe uma maçã verde e um estetoscópoio." width="300">
 				<img class="food img-circle" src="images/heart2.jpg" alt="Imgem de fritas e legumes formando um coração." width="300">
 				<img class="food img-circle" src="images/food3.jpg" alt=" Imagem de Legumes e frutas formando um círculo" width="300">

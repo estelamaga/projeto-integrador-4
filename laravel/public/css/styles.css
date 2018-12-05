@@ -306,6 +306,7 @@ body.tema-dark .btn.btn-default{
     padding-bottom: 15px;
     /* margin-left: 29px; */
     /* margin-left:40px; */
+    overflow: hidden;
 }
 
 .products .img-produto{
@@ -313,6 +314,8 @@ body.tema-dark .btn.btn-default{
   height: 200px;
   background-position: center;
   background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin: 10px;
 }
 
 .destaque {
@@ -690,10 +693,6 @@ div.third.col-md-12 > h2.text-center{
     margin-bottom:20px;
 }
 
-
-
-
-
 /* Pagina de Carrinho */
 
 
@@ -770,9 +769,6 @@ margin-top:18px;
 
 /* FIm da pagina de carrinho */
 
-.subir{
-
-}
 
 /* thumb */
 .owl-carousel {

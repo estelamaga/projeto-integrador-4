@@ -9,7 +9,7 @@
 						<div class="col-xs-12">
 							<div class="content-carousel">
 								<div class="owl-carousel">
-									<div> <img class="zoom-img" src="/images/palmeiras1.png"> </div>
+									<div> <img class="zoom-img" src="/images/palmeiras1.png" data-zoom-image="/images/palmeiras1.png"> </div>
 									<div> <img class="zoom-img" src="/images/camiseta-branca.jpg"> </div>
 									<div> <img class="zoom-img" src="/images/palmeiras1.png"> </div>
 									<div> <img class="zoom-img" src="/images/palmeiras1.png"> </div>

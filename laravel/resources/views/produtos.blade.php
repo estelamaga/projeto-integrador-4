@@ -9,7 +9,7 @@
               @foreach($produtos as $produto)
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="products">
-                        <div class="img-produto" style="background-image: url(/{{$produto->fotoUrl ? : 'storage/fotoProduto/noimage.svg'}})">
+                        <div class="img-produto" style="background-image: url('/{{$produto->fotoUrl ? : 'storage/fotoProduto/noimage.svg'}}')">
                         </div>
                         <h4 class="text-center" style="margin-bottom:2px;">{{$produto->nome}}</h4>
                         <div class="stars">

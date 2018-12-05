@@ -11,9 +11,13 @@ window.onload = function(){
 }
 
 if($('.zoom-img')){
-  console.log($(".active .zoom-img"));
-  $(".active .zoom-img").elevateZoom();
+  //console.log($(".active .img-produto"));
+  $(".zoom-img").elevateZoom({
+  zoomType				: "inner",
+  cursor: "crosshair"
+});
 }
+  // console.log($(".active .img-produto"));
 
 $(document).ready(function(){
 
