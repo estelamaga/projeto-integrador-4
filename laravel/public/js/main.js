@@ -10,14 +10,13 @@ window.onload = function(){
   }
 }
 
-if($('.zoom-img')){
-  //console.log($(".active .img-produto"));
-  $(".zoom-img").elevateZoom({
-  zoomType				: "inner",
-  cursor: "crosshair"
-});
-}
-  // console.log($(".active .img-produto"));
+// if($('.zoom-img')){
+//   //console.log($(".active .img-produto"));
+//   $(".zoom-img").elevateZoom({
+//   zoomType				: "inner",
+//   cursor: "crosshair"
+// });
+// }
 
 $(document).ready(function(){
 

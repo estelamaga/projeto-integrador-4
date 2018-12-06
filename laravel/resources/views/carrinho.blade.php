@@ -42,7 +42,7 @@
                             <td class="text-center"><strong class="total">Total 199.99</strong></td>
                         </tr>
                         <tr>
-                            <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Comprando</a></td>
+                            <td><a href="/produtos" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Comprando</a></td>
                             <td colspan="1" class="hidden-xs"></td>
                             <td class="hidden-xs text-center"><strong>Total R$199.99</strong></td>
                             <td><a href="#" class="btn btn-success btn-block">Finalizar <i class="fa fa-angle-right"></i></a></td>

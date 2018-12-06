@@ -10,9 +10,9 @@
 							<div class="content-carousel">
 								<div class="owl-carousel">
 									<div> <img class="zoom-img" src="/images/palmeiras1.png" data-zoom-image="/images/palmeiras1.png"> </div>
-									<div> <img class="zoom-img" src="/images/camiseta-branca.jpg"> </div>
-									<div> <img class="zoom-img" src="/images/palmeiras1.png"> </div>
-									<div> <img class="zoom-img" src="/images/palmeiras1.png"> </div>
+									<div> <img class="zoom-img" src="/images/climate.jpg"> </div>
+									<div> <img class="zoom-img" src="/images/tras.jpg"> </div>
+									<div> <img class="zoom-img" src="/images/simbolo.jpg"> </div>
 								</div>
 							</div>
 
@@ -20,7 +20,7 @@
 
 					</div>
 				</div>
-				<div class="details col-md-5">
+				<div class="details col-md-5"><br>
 					<h3 class="product-title">{{$produto->nome}}</h3>
 					<div class="rating">
 						<div class="stars">
