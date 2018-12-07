@@ -134,4 +134,11 @@ class ProdutosController extends Controller
       return redirect('/produtos');
     }
     // CRUD (Delete) - é executar um DELETE.
+
+    // public function admin(){
+    //   $user = auth()->user();
+    //   if($user->admin){
+    //   $produto = Produto::paginate(8);
+    //   return view('admin')->with('produtos', $produtos);
+    // }
 }
