@@ -83,7 +83,7 @@
               <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Roupas
                 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="/produtos">Camisetas</a></li>
+                <li><a href="/produtos">Camisas</a></li>
                 <li><a href="/produtos">Agasalhos</a></li>
                 <li><a href="/produtos">Vestidos</a></li>
                 <li class="divider"></li>
@@ -135,7 +135,7 @@
               <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Roupas
                 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="produtos">Camisetas</a></li>
+                <li><a href="produtos">Camisas</a></li>
                 <li><a href="produtos">Agasalhos</a></li>
                 <li><a href="produtos">Vestidos</a></li>
                 <li class="divider"></li>

@@ -27,7 +27,9 @@
                 @endforeach
 
             </div>
-            {{ $produtos->links() }}
+            <div class="container">
+              {{ $produtos->links() }}
+            </div>
         </div>
     </div>
 

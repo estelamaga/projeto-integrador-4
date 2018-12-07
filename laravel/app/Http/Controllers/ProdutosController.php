@@ -81,19 +81,20 @@ class ProdutosController extends Controller
 
     public function atualizarProduto(Request $request, $id){
 
-      $arquivo = $request->file('fotoUrl');
-      if (empty($arquivo)) {
-        abort(400, 'Nenhum arquivo foi enviado');
-      }
-      // salvando
-      $nomePasta = 'fotoProduto';
-      $arquivo->storePublicly($nomePasta);
-      $caminho = public_path()."\\storage\\$nomePasta";
-      $nomeArquivo = $arquivo->getClientOriginalName();
-     // movendo
-      $arquivo->move($caminho, $nomeArquivo);
-
       $produto = Produto::find($id);
+
+      $arquivo = $request->file('fotoUrl');
+      if (!empty($arquivo)) {
+        // salvando
+        $nomePasta = 'fotoProduto';
+        $arquivo->storePublicly($nomePasta);
+        $caminho = public_path()."\\storage\\$nomePasta";
+        $nomeArquivo = $arquivo->getClientOriginalName();
+        // movendo
+        $arquivo->move($caminho, $nomeArquivo);
+        $produto->fotoUrl = "storage/$nomePasta/$nomeArquivo";
+      }
+
       $produto->cor = $request->input('cor');
       $produto->tamanho = $request->input('tamanho');
       $produto->SKU = $request->input('SKU');
@@ -110,7 +111,6 @@ class ProdutosController extends Controller
       $produto->tipo_de_produto = $request->input('tipo_de_produto');
       $produto->fornecedor = $request->input('fornecedor');
       $produto->fk_categoria_id = $request->input('fk_categoria_id');
-      $produto->fotoUrl = "storage/$nomePasta/$nomeArquivo";
 
       $produto->save();
 
