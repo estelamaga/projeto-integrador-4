@@ -38,7 +38,7 @@
   <br>
 
   <button  class="btn Facebook" type="submit">Entrar com Facebook</button>
-  <p>Não tem cadastro? <a href="/cadastro">Cadastre-se</a></p>
+  <p>Não tem cadastro? <a href="/register">Cadastre-se</a></p>
   </form>
 </div>
 <!-- fim do formulario -->

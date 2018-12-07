@@ -15,7 +15,8 @@
                 <div class="panel-body">
                     <h5><span class="label label-primary">Resposta</span></h5>
 
-                    <p> É sim
+                    <p> A nossa empresa oferece um ambiente seguro na hora do pagamento,
+                     sigilo de todos os dados e informações de nossos clientes tornando nosso site muito confiável.
                     </p>
                 </div>
             </div>
@@ -32,7 +33,7 @@
                 <div class="panel-body">
                     <h5><span class="label label-primary">Resposta</span></h5>
 
-                    <p>Não.</p>
+                    <p>Somente loja online.</p>
                 </div>
             </div>
         </div>

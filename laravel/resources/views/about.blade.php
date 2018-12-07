@@ -21,7 +21,7 @@
 				<img class="food img-circle" src="images/cotton-img.jpg" alt="Mesa de madeira de cor marrom escuro e sobre essa mesa existe um recipiente
 				 em formato de coração com vegetais, frutas e grãos. Ao lado desse recepiente existe uma maçã verde e um estetoscópoio." width="300">
 				<img class="food img-circle" src="images/heart2.jpg" alt="Imgem de fritas e legumes formando um coração." width="300">
-				<img class="food img-circle" src="images/food3.jpg" alt=" Imagem de Legumes e frutas formando um círculo" width="300">
+				<img class="food img-circle" src="images/sustentavel.jpg" alt=" Imagem de Legumes e frutas formando um círculo" width="300">
 			</div>
 
 			<div class="col-md-12 text-justify">

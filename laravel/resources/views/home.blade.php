@@ -13,7 +13,7 @@
               <button id="buy" class="btn btn-default" type="submit">Clique aqui</button>
             </div>
           </div>
-          <div class="item" style="background-image:url('images/alimentos.jpg')">
+          <div class="item" style="background-image:url('images/camisa teste.jpg')">
             <div class="carousel-caption">
               ...
             </div>
