@@ -89,11 +89,11 @@
                 <li class="divider"></li>
                 <li class="dropdown-header">Pets</li>
                 <li><a href="#">Roupas</a></li>
-                <li><a href="#">Alimentos</a></li>
+                <!-- <li><a href="#">Alimentos</a></li> -->
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Alimentos
+              <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Em breve
                 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Em breve</a></li>
@@ -141,11 +141,11 @@
                 <li class="divider"></li>
                 <li class="dropdown-header">Pets</li>
                 <li><a href="#">Roupas</a></li>
-                <li><a href="#">Alimentos</a></li>
+                <!-- <li><a href="#">Alimentos</a></li> -->
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Alimentos
+              <a href="#" id="dropcolor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Em breve
                 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Em breve</a></li>
