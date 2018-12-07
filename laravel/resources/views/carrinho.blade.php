@@ -19,15 +19,15 @@
                         <tr>
                             <td data-th="Product">
                                 <div class="row">
-                                    <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..."class="img-responsive" /></div>
+                                    <div class="col-sm-2 hidden-xs"><img src="/images/palmeiras1.png" alt="..."class="img-responsive" /></div>
                                     <div class="col-sm-10">
-                                        <h4 class="nomargin">Produto 1</h4>
-                                        <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                            nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                                        <h4 class="nomargin">CAMISA DO PALMEIRAS I 2018 ADIDAS - MASCULINA</h4>
+                                        <p>COR:VERDE/BRANCO</p>
+                                        <p>TAMANHO:GG</p>
                                     </div>
                                 </div>
                             </td>
-                            <td data-th="Preço">R$199.99</td>
+                            <td data-th="Preço">R$249.00</td>
                             <td data-th="Quantidade">
                                 <input type="number" class="form-control text-center" value="1">
                             </td>
@@ -39,12 +39,12 @@
                     </tbody>
                     <tfoot>
                         <tr class="visible-xs">
-                            <td class="text-center"><strong class="total">Total 199.99</strong></td>
+                            <td class="text-center"><strong class="total">Total 249.00</strong></td>
                         </tr>
                         <tr>
                             <td><a href="/produtos" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Comprando</a></td>
                             <td colspan="1" class="hidden-xs"></td>
-                            <td class="hidden-xs text-center"><strong>Total R$199.99</strong></td>
+                            <td class="hidden-xs text-center"><strong>Total R$249.00</strong></td>
                             <td><a href="#" class="btn btn-success btn-block">Finalizar <i class="fa fa-angle-right"></i></a></td>
                         </tr>
                     </tfoot>
