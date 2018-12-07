@@ -685,7 +685,10 @@ font-weight: 300;
 img.food.img-circle{
     margin-left: 50px;
     margin-bottom:20px;
+    height:300px;
 }
+
+
 
 .sub{
     margin-bottom:30px;
