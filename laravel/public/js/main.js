@@ -1,12 +1,19 @@
 window.onload = function(){
+  if(sessionStorage.getItem('tema')){
+    document.body.classList.add(sessionStorage.getItem('tema'));
+  }
+  
   let btndark = document.getElementById('tema-dark');
   btndark.onclick = function(){
-    document.body.classList.add('tema-dark');
+    sessionStorage.setItem("tema", "tema-dark");
+    location.reload();
   }
 
   let btnnormal = document.getElementById('tema-normal');
   btnnormal.onclick = function(){
-    document.body.classList.remove('tema-dark');
+    sessionStorage.setItem("tema", "tema-normal");
+    location.reload();
+
   }
 }
 
