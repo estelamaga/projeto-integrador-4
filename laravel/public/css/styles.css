@@ -7,19 +7,25 @@ body {
 }
 
 body.tema-dark nav{
-  background-color: #ffb300;
+  background-color: #e8bb4f;
   color: #fff;
 }
 
 body.tema-dark #nav2{
-  background-color: #c68400;
-  color: #fff;
+  background-color: #c39230;
+  color: black;
 }
 body.tema-dark #nav2 a{
-  color: #fff;
+  color: black;
+}
+body.tema-dark .navbar-inverse .navbar-nav>.open>a{
+    background-color: #e8c240;
+}
+body.tema-dark .dropdown-menu{
+  background-color: #e8bb4f;
 }
 body.tema-dark #myFooter .footer-copyright{
-  background-color: #ffb300;
+  background-color: #e8bb4f;
   color: #555;
 }
 body.tema-dark #myFooter .footer-copyright p{
