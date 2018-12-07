@@ -39,7 +39,7 @@
 					<h5 class="colors">Cor: {{$produto->cor}} </h5>
 					<h4 class="price"><span>R$ {{$produto->preco}}</span></h4>
 					<div class="action">
-						<button class="add-to-cart btn btn-default" type="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> COMPRAR</button>
+						<a href="/carrinho" class="add-to-cart btn btn-default" type="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> COMPRAR</a>
 					</div>
 				</div>
 			</div>
