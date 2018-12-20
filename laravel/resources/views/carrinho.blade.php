@@ -21,7 +21,7 @@
                                 <div class="row">
                                     <div class="col-sm-2 hidden-xs"><img src="/images/camiseta-branca.jpg" alt="..."class="img-responsive" /></div>
                                     <div class="col-sm-10">
-                                        <h4 class="nomargin">CAMISA BRANCA - MASCULINA</h4>
+                                        <h4 class="nomargin">CAMISA BRANCA</h4>
                                         <p>COR: BRANCO</p>
                                         <p>TAMANHO:PP</p>
                                     </div>
