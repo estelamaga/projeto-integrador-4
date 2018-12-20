@@ -25,16 +25,16 @@
 					<div class="rating">
 						<div class="stars">
 							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
 						</div>
-						<span class="review-no">41 avaliações</span>
+						<span class="review-no">0 avaliações</span>
 					</div>
 
 					<!-- <p class="product-description">{{$produto->descricao}}</p> -->
-					<small class="vote"><strong>91%</strong> de clientes aprovaram este produto <strong>(87 votos)</strong></small>
+					<small class="vote"><strong>0%</strong> de clientes aprovaram este produto <strong>(0 votos)</strong></small>
 					<h5 class="sizes">Tamanhos: {{$produto->tamanho}} </h5>
 					<h5 class="colors">Cor: {{$produto->cor}} </h5>
 					<h4 class="price"><span>R$ {{$produto->preco}}</span></h4>
