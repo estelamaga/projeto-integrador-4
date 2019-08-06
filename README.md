@@ -23,4 +23,4 @@ Request/Response, views, templates, ORM, autenticação, sessão, Gerenciamento 
 JAVASCRIPT: Acesso ao DOM, seletores, adicionar/apagar, edição, obetos, variáveis, escopos, gerenciamento estendido:storage, forms, embeds, etc.
 Requisições por AJAX.
 
-REACT: ntrodução ao React.
+REACT: Introdução ao React.
